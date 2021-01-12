@@ -1,0 +1,198 @@
+.animationLeftTranslateX {
+    overflow: hidden;
+    >* {
+        animation: LeftTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes LeftTranslateX {
+    from {
+        transform: translateX(-1000px)
+    }
+    15% {
+        transform: translateX(-1000px)
+    }
+
+    to {
+        transform: translateX(0px)
+    }
+  }
+
+.animationBottomTranslateY {
+    overflow: hidden;
+    >* {
+        animation: BottomTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes BottomTranslateX {
+    from {
+        transform: translateY(250px)
+    }
+    15% {
+        transform: translateY(250px)
+    }
+    to {
+        transform: translateY(0px)
+    }
+  }
+
+.animationOpacity {
+    // overflow: hidden;
+    >* {
+        animation: Opacity 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes Opacity {
+    from {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+
+
+.animationBefore {
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        
+        right: 0;
+        background:
+        #fff;
+        z-index: 99;
+        animation: Before 1.2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
+    >* {
+        
+    }
+}
+
+@keyframes Before {
+    from {
+        padding-right: 100%;
+    }
+    15% {
+        padding-right: 100%;
+    }
+    55% {
+        padding-right: 100%;
+    }
+    to {
+        padding: 0%;
+    }
+  }
+
+
+
+
+
+
+
+// Out---
+
+
+
+
+.animationLeftTranslateXOut {
+    overflow: hidden;
+    >* {
+        animation: LeftTranslateXOut 0.5s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+
+    }
+}
+
+@keyframes LeftTranslateXOut {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateX(-1000px)
+    }
+}
+
+.animationBottomTranslateYOut {
+    overflow: hidden;
+    >* {
+        animation: BottomTranslateXOut 0.5s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+
+    }
+}
+
+@keyframes BottomTranslateXOut {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(150px)
+    }
+}
+
+.animationOpacityOut {
+    // overflow: hidden;
+    >* {
+        animation: OpacityOut 0.5s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+
+    }
+}
+
+@keyframes OpacityOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.animationBeforeOut {
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+
+        right: 0;
+        background:
+                #fff;
+        z-index: 99;
+        animation: BeforeOut 0.5s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+
+    }
+    >* {
+
+    }
+}
+
+@keyframes BeforeOut {
+    from {
+        padding-right: 0%;
+    }
+
+    to {
+        padding: 100%;
+    }
+}
