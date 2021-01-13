@@ -84,6 +84,15 @@ header {
     a + a {
         margin-left: 18px;
     }
+
+    .mobile-header-elements {
+        display: none;
+
+        .header-phone {
+            font-size: 16px;
+            margin-right: 22px;
+        }
+    }
 }
 
 a {
@@ -273,6 +282,7 @@ footer {
         .text {
             max-width: 550px;
             margin-left: 674px;
+            margin-right: 25vw;
 
             * {
                 display: inline-block;
@@ -721,3 +731,153 @@ footer {
     transition-delay: 0.5s !important;
 }
 
+
+@media screen and (max-width: 1640px) {
+    .minpage-slide-title,  .minpage-slide-title-smooth {
+        font-size: 140px;
+    }
+
+    .minpage-slide-text-big {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .minpage-slide-text-medium {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .minpage-slide-text-small {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .slide1 .slide1-img1 {
+        height: 100px;
+    }
+
+    .slide1 {
+        .line1 h1 {
+            line-height: 85px;
+        }
+
+        h1 {
+            line-height: 145px;
+        }
+
+        .line3 {
+            margin-top: -10px;
+        }
+
+        .line4 {
+
+            .text h6 {
+                text-indent: 210px;
+                margin-top: -21px;
+            }
+        }
+    }
+
+    .slide2 {
+        .minpage-slide-title {
+            line-height: 160px;
+        }
+    }
+
+    .slide3 {
+        .line2 {
+            margin-bottom: 50px;
+        }
+
+        .line3 {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .slide3 {
+        .text-column {
+            width: 510px;
+        }
+        .inst-line .inst-element {
+            width: 144px;
+            height: 180px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1444px) {
+    .minpage-slide-title,  .minpage-slide-title-smooth {
+        font-size: 100px;
+    }
+
+    .slide1 {
+        .line1 {
+            h1 {
+                line-height: 65px;
+            }
+        }
+
+        .line3 .minpage-slide-text-small {
+            margin-right: 150px;
+        }
+
+        .line4 .text {
+            margin-left: 597px;
+        }
+
+        h1 {
+            line-height: 105px;
+        }
+
+        .slide1-img1 {
+            height: 73px;
+        }
+    }
+}
+
+//MOBILE
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 10px 15px;
+
+        nav {
+            position: fixed;
+            top: -100vh;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background: #009E4F;
+
+            overflow-y: auto;
+
+            a {
+                font-size: 32px;
+                line-height: 1;
+
+                text-align: center;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+            }
+        }
+
+        .mobile-header-elements {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    footer {
+        display: none;
+    }
+}

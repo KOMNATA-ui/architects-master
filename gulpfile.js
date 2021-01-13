@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var watch = require('gulp-watch');
 var pug = require('gulp-pug');
 var sass = require('gulp-sass');
-
+var livereload = require('gulp-livereload');
 
 var srcDir = "./src/"
 var distDir = "./dist/"
@@ -15,19 +15,14 @@ function pugB() {
        doctype: 'html',
        pretty: false
     }))
-    .pipe(gulp.dest(distDir));
+    .pipe(gulp.dest(distDir))
 }
 
 function sassB() {
     return gulp.src(srcDir + 'scss/*.scss')
       .pipe(sass({outputStyle: 'compressed'}))
-      .pipe(gulp.dest(distDir));
+      .pipe(gulp.dest(distDir))
 }
-
-// gulp.task('build', gulp.series(['pug', 'sass']), function () {
-//     gulp.watch([srcDir + "pug/*.pug"]);
-//     gulp.watch([srcDir + '/scss/*.scss']);
-// });
 
 var watch = gulp.series( pugB, sassB, function(){
 	gulp.watch(srcDir + "pug/*.pug", pugB);
@@ -35,4 +30,5 @@ var watch = gulp.series( pugB, sassB, function(){
 	console.log('Watcher started');
 });
 
+gulp.task('sassB', sassB);
 gulp.task('watch', watch);
