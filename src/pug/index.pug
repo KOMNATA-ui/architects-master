@@ -35,8 +35,18 @@ block content
                             p Последний кейс бюро
                         div.SelectAnimationBefore
                             .backgrounded-img.slide1-img2(style='background-image:url(../media/case3.png')
+                                .img-text
+                                    .img-text-title новосибирск мега 2020
+                                    .img-text-year
+                                        span 2
+                                        span 0
+                                        span 1
+                                        span 9
             
             .slide2.mainpage-slide.section
+                .slide2-img
+                    div.SelectAnimationBefore
+                        .backgrounded-img.slide2-img1(style='background-image:url(../media/slide2.png')
                 .line1.line
                     div.SelectAnimationOpacity
                         p.minpage-slide-text-small Проектная организация «Формат Проект» основана в Новосибирске в 2010 году. Мы оказываем комплекс услуг по разработке проектной документации в сфере гражданского и промышленного строительства.
@@ -49,21 +59,10 @@ block content
                     div.SelectAnimationLeftTranslateY
                         h1.minpage-slide-title продуманность
 
-                .line3.line
                     div.SelectAnimationLeftTranslateY
                         h1.minpage-slide-title-smooth решении
 
-                .slide2-img
-                    div.SelectAnimationBefore
-                        .backgrounded-img.slide2-img1(style='background-image:url(../media/slide2.png')
-
             .slide3.mainpage-slide.section
-                .slide3-img
-                    a(href="somewhere")
-                        div.SelectAnimationBefore
-                            .backgrounded-img.slide3-img1(style='background-image:url(../media/slidePortret.png')
-                            p Последний кейс бюро
-
                 .line1.line.SelectAnimationLeftTranslateY
                     h1.minpage-slide-title простое
 
@@ -74,11 +73,24 @@ block content
                     p.minpage-slide-text-small Мы думаем, как без лишних затрат соединить эффектный образ и удобство при эксплуатации. Мы думаем, какой будет вид из окна каждой комнаты и как тень в полдень ляжет на террасу Вашего коттеджа.
                     p.minpage-slide-text-small Мы заботимся, чтобы видя плачущего прораба, Вы всегда были уверены, что это не Ваш работник, потому что документация по Вашему проекту выполнена профессионалами.
 
+                    p.mobile.minpage-slide-text-small Мы любим сложные задачи, а также поможем и с простыми. Нам интересно проектировать завод или театр, квартиру, коттедж или офис.
+                    p.mobile.minpage-slide-text-small Принципы нашей работы: продуманность решений и внимание к деталям. В нашей команде архитекторы, инженеры и конструкторы, дизайнеры с большим опытом работы. Мы делаем проекты «под ключ» точно к назначенной дате.
+                    p.mobile.minpage-slide-text-small Мы готовы ответить на все Ваши вопросы о проектировании, реконструкции зданий и перепланировке помещений!
+
+                .slide3-img
+                    a(href="somewhere")
+                        div.SelectAnimationBefore
+                            .backgrounded-img.slide3-img1(style='background-image:url(../media/slidePortret.png')
+                            p Последний кейс бюро
+
                 .line4.line
                     .text-column.SelectAnimationOpacity
                         p.minpage-slide-text-small Мы любим сложные задачи, а также поможем и с простыми. Нам интересно проектировать завод или театр, квартиру, коттедж или офис.
                         p.minpage-slide-text-small Принципы нашей работы: продуманность решений и внимание к деталям. В нашей команде архитекторы, инженеры и конструкторы, дизайнеры с большим опытом работы. Мы делаем проекты «под ключ» точно к назначенной дате.
                         p.minpage-slide-text-small Мы готовы ответить на все Ваши вопросы о проектировании, реконструкции зданий и перепланировке помещений!
+
+                        p.mobile.minpage-slide-text-small Мы думаем, как без лишних затрат соединить эффектный образ и удобство при эксплуатации. Мы думаем, какой будет вид из окна каждой комнаты и как тень в полдень ляжет на террасу Вашего коттеджа.
+                        p.mobile.minpage-slide-text-small Мы заботимся, чтобы видя плачущего прораба, Вы всегда были уверены, что это не Ваш работник, потому что документация по Вашему проекту выполнена профессионалами.
 
                     .inst-line
                         div.SelectAnimationBefore
@@ -108,6 +120,20 @@ block content
                                 .slide4-contacts-text-title почта:
                                 .slide4-contacts-text-contact FORMATARCHITECTS@GMAIL.COM
                             .slide4-contacts-form
+                                form(action="")
+                                    label
+                                        input(type="text", name="customer_name", value="")
+                                        span Ваше имя
+                                    label
+                                        input(type="text", name="org_name", value="")
+                                        span Название организации
+                                    label
+                                        input(type="text", name="phone", value="")
+                                        span +7 (___) ___ __ __
+                                    label
+                                        input(type="text", name="message", value="")
+                                        span Напишите ваше сообщение
+                                    input(type='submit', value='отправить')
 
                     .slide4-map.backgrounded-img(style='background-image:url(../media/map.png')
 

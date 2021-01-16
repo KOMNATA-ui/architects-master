@@ -147,6 +147,8 @@ $(document).on('click', '#moveUp', function(){
     fullpage_api.responsiveSlides.toSlides();
 });
 
+//Открытие меню в шапке
+
 
 
 
