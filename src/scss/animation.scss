@@ -65,7 +65,7 @@
 
 
 .animationBefore {
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     &::before {
         content: '';
@@ -167,7 +167,7 @@
 
 
 .animationBeforeOut {
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     &::before {
         content: '';

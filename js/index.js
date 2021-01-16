@@ -4,7 +4,7 @@ var animationIsFinished = false;
 
 new fullpage('#fullpage', {
     sectionsColor: ['#fff0', '#fff0', '#fff0', '#fff0'],
-    autoScrolling:true,
+    autoScrolling:false,
     fadingEffect:true,
     dragAndMove: false,
 
@@ -146,6 +146,46 @@ $(document).on('click', '#moveUp', function(){
     fullpage_api.moveSectionUp();
     fullpage_api.responsiveSlides.toSlides();
 });
+
+$(document).ready(function() {
+    ymaps.ready(init);
+
+
+})
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+      center: [55.026867, 82.922079],
+      zoom: 15,
+      controls: []
+    }),
+
+    // Создаем метку с помощью вспомогательного класса.
+    myPlacemark1 = new ymaps.Placemark([55.026953, 82.919684], {
+      // Свойства.
+      // Содержимое хинта.
+      hintContent: 'Мы всегда вам рады'
+    }, {
+      // Опции
+      // Своё изображение иконки метки.
+      iconLayout: 'default#imageWithContent',
+      iconImageHref: 'map-marker.png',
+      // Размеры метки.
+      iconImageSize: [24, 36],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [-12, -36]
+    })
+  
+    myMap.behaviors.disable('scrollZoom'); // — это отключает зум колёсиком мышки, всё ок.
+    myMap.behaviors.disable('multiTouch'); // — это отключает зум щипком, не очень нужно. 
+
+  // Добавляем все метки на карту.
+  myMap.controls.remove('routeEditor');
+  myMap.geoObjects
+    .add(myPlacemark1)
+
+}
 
 //Открытие меню в шапке
 
