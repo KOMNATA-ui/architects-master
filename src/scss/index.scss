@@ -62,6 +62,12 @@ header {
 
     padding: 30px 45px 0;
 
+    nav {
+        .inst-link {
+            display: none;
+        }
+    }
+
     a {
         text-decoration: none;
         font-family: 'GolosUI';
@@ -912,6 +918,49 @@ footer {
     transition-delay: 0.5s !important;
 }
 
+.slider-controls {
+    position: absolute;
+    left: 250px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+
+    .element-wrapper {
+        width: 45px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 5px;
+        cursor: pointer;
+
+        &:hover, &.active {
+            .slider-controls-element {
+                height: 5px;
+                background: #009E4F;
+            }
+        }
+    }
+
+    .element-wrapper + .element-wrapper {
+        margin-left: 25px;
+    }
+
+    &-element {
+        width: 35px;
+        height: 1px;
+
+        background: #9C9C9C;
+
+        transition: all .15s ease;
+
+        &:hover, &.active {
+            height: 5px;
+            background: #009E4F;
+        }
+    }
+}
 
 @media screen and (max-width: 1640px) {
     .minpage-slide-title,  .minpage-slide-title-smooth {
@@ -1074,7 +1123,7 @@ footer {
             align-items: center;
             background: #009E4F;
             z-index: 10;
-            padding-top: 30px;
+            padding-top: 60px;
 
             transition: all .3s ease;
 
@@ -1088,6 +1137,13 @@ footer {
                 text-transform: uppercase;
 
                 color: #FFFFFF;
+
+                margin: 0;
+            }
+
+            .inst-link {
+                display: block;
+                margin-top: 30px;
             }
         }
 
@@ -1205,6 +1261,10 @@ footer {
                 color: #fff;
             }
         }
+    }
+
+    .slider-controls {
+        display: none;
     }
 
     footer {
