@@ -150,7 +150,13 @@ $(document).on('click', '#moveUp', function(){
 $(document).ready(function() {
     ymaps.ready(init);
 
+    var button = $('.mobile-nav-open '),
+        header = $('header');
 
+    $('.mobile-nav-open').on('click', function() {
+        button.toggleClass('is-active');
+        header.toggleClass('is-active');
+    })
 })
 
 function init() {
@@ -188,8 +194,6 @@ function init() {
 }
 
 //Открытие меню в шапке
-
-
 
 
 // Страница проектов

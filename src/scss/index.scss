@@ -827,7 +827,7 @@ footer {
                         transition: 0.3s;
                         &:hover {
                             color: #009E4F;
-                            font-width: bold;
+                            font-weight: bold;
                             transition: 0.3s;
                         }
 
@@ -987,6 +987,14 @@ footer {
 
         background: #fff;
 
+        logo {
+            position: relative;
+            z-index: 11;
+            svg path {
+                transition: fill .3s ease;
+            }
+        }
+
         nav {
             position: fixed;
             top: -100vh;
@@ -998,6 +1006,10 @@ footer {
             justify-content: space-around;
             align-items: center;
             background: #009E4F;
+            z-index: 10;
+            padding-top: 30px;
+
+            transition: all .3s ease;
 
             overflow-y: auto;
 
@@ -1017,6 +1029,9 @@ footer {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+
+            position: relative;
+            z-index: 11;
         }
 
         .hamburger {
@@ -1033,6 +1048,7 @@ footer {
             border: 0;
             background-color: transparent;
             padding: 0;
+            outline: none;
         }
 
         .hamburger-box {
@@ -1102,6 +1118,25 @@ footer {
             top: 0;
             transition: top 75ms ease,opacity 75ms ease .12s;
             opacity: 0;
+        }
+
+        &.is-active {
+            background: #009E4F;
+            color: #fff;
+
+            logo {
+                svg path {
+                    fill: #fff;
+                }
+            }
+
+            nav {
+                top: 0;
+            }
+
+            a {
+                color: #fff;
+            }
         }
     }
 
