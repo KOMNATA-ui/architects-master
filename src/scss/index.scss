@@ -1095,6 +1095,12 @@ footer {
     }
 }
 
+@media screen and (max-height: 900px) {
+    .slide4-content {
+        padding: 70px 12%;
+    }
+}
+
 //MOBILE
 
 @media screen and (max-width: 1024px) {
