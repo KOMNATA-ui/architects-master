@@ -115,7 +115,7 @@ block content
                             .slide4-text Мы готовы ответить на&nbsp;все Ваши вопросы о&nbsp;проектировании, реконструкции зданий и&nbsp;перепланировке помещений! Оставьте номер телефона ниже, и&nbsp;наш специалист свяжется с&nbsp;вами!
 
                         .slide4-contacts
-                            .slide4-contacts-text
+                            .slide4-contacts-text.SelectAnimationOpacity
                                 .slide4-contacts-text-title адрес:
                                 .slide4-contacts-text-contact г.&nbsp;Новосибирск, ул.&nbsp;Максима&nbsp;Горького&nbsp;54, 3&nbsp;этаж, офис&nbsp;207
                                 .slide4-contacts-text-title ТЕЛЕФОН:
@@ -124,39 +124,40 @@ block content
                                 .slide4-contacts-text-title почта:
                                 .slide4-contacts-text-contact FORMATARCHITECTS@GMAIL.COM
                             .slide4-contacts-form
-                                form(action="")
-                                    label
+                                form(action="").SelectAnimationLeftTranslateY
+                                    label.SelectAnimationLeftTranslateY
                                         input(type="text", name="customer_name", value="")
                                         span Ваше имя
-                                    label
+                                    label.SelectAnimationLeftTranslateY
                                         input(type="text", name="org_name", value="")
                                         span Название организации
-                                    label
+                                    label.SelectAnimationLeftTranslateY
                                         input(type="text", name="phone", value="")
                                         span +7 (___) ___ __ __
-                                    label
+                                    label.SelectAnimationLeftTranslateY
                                         input(type="text", name="message", value="")
                                         span Напишите ваше сообщение
                                     input(type='submit', value='отправить')
 
                     .slide4-map.backgrounded-img
-                        .map#map
+                        .map#map.SelectAnimationBefore
 
-                    .copyrights
+                    .copyrights.SelectAnimationLeftTranslateY
                         a(href="#") Задизайнено в 
                             span komnate
                         a(href="#") Политика сайта
 
-                    .overlay-text формат проект формат проектформат проект формат проект
+                    .overlay-text.SelectAnimationOpacity
+                        span формат проект формат проектформат проект формат проект
             
-            .slider-controls
-                .element-wrapper
-                    .slider-controls-element
-                .element-wrapper
-                    .slider-controls-element
-                .element-wrapper
-                    .slider-controls-element
-                .element-wrapper
-                    .slider-controls-element
+            //.slider-controls
+            //    .element-wrapper
+            //        .slider-controls-element
+            //    .element-wrapper
+            //        .slider-controls-element
+            //    .element-wrapper
+            //        .slider-controls-element
+            //    .element-wrapper
+            //        .slider-controls-element
                             
 
