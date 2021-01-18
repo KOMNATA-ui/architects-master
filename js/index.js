@@ -4,7 +4,7 @@ var animationIsFinished = false;
 
 new fullpage('#fullpage', {
     sectionsColor: ['#fff0', '#fff0', '#fff0', '#fff0'],
-    autoScrolling:false,
+    autoScrolling:true,
     fadingEffect:true,
     dragAndMove: false,
 

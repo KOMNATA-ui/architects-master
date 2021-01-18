@@ -467,6 +467,9 @@ footer {
             color: #000;
             opacity: .5;
             margin-right: 20px;
+            position: absolute;
+            top: 100%;
+            left: 30px;
         }
 
         .slide3-img1 {
@@ -507,22 +510,31 @@ footer {
     }
 
     .text-column {
-        width: 408px;
+        width: 42%;
 
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         p {
             margin-bottom: 20px;
+            max-width: 408px;
         }
     }
 
     .inst-line {
         position: relative;
         overflow: hidden;
+        padding-right: 30px;
+        width: 58%;
+
         .elements-wrapper {
             display: flex;
             flex-direction: row;
+
+            >div {
+                width: 25%;
+            }
         }
 
         .overlay-text {
@@ -545,10 +557,8 @@ footer {
         }
 
         .inst-element {
-            width: 256px;
+            width: 100%;
             height: 320px;
-
-            margin-left: 50px;
 
             &:hover {
                 &::after {
@@ -919,8 +929,8 @@ footer {
 }
 
 .slider-controls {
-    position: absolute;
-    left: 250px;
+    position: fixed;
+    left: 230px;
     bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -1001,6 +1011,10 @@ footer {
 
         .line4 {
 
+            .text {
+                padding-right: 40px;
+            }
+
             .text h6 {
                 text-indent: 210px;
                 margin-top: -21px;
@@ -1040,13 +1054,13 @@ footer {
 
 @media screen and (max-width: 1444px) {
     .minpage-slide-title,  .minpage-slide-title-smooth {
-        font-size: 100px;
+        font-size: 120px;
     }
 
     .slide1 {
         .line1 {
             h1 {
-                line-height: 65px;
+                line-height: 100px;
             }
         }
 
@@ -1059,11 +1073,78 @@ footer {
         }
 
         h1 {
-            line-height: 105px;
+            line-height: 115px;
         }
 
         .slide1-img1 {
             height: 73px;
+        }
+    }
+
+    .slide2 {
+        .line1 {
+            p {
+                padding-right: 30px;
+            }
+        }
+        .line2 {
+            h1 {
+                line-height: 125px;
+            }
+
+            & > div:last-child {
+                margin-top: -13px;
+            }
+        }
+    }
+
+    .slide3 {
+        h1 {
+            line-height: 97px;
+        }
+    }
+
+    .slide4 {
+        &-title {
+            font-size: 58px;
+            line-height: 52px;
+            letter-spacing: -0.02em;
+            padding-top: 20px;
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .minpage-slide-title,  .minpage-slide-title-smooth {
+        font-size: 100px;
+    }
+
+    .slide1 {
+        .line1 {
+            h1 {
+                line-height: 65px;
+            }
+        }
+
+        h1 {
+            line-height: 105px;
+        }
+    }
+
+    .slide2 {
+        .line2 {
+            h1 {
+                line-height: 105px;
+            }
+
+            & > div:last-child {
+                margin-top: -13px;
+            }
         }
     }
 }
@@ -1457,7 +1538,7 @@ footer {
             p {
                 display: block;
                 text-align: end;
-
+                position: static;
                 padding-bottom: 5px;
             }
         }
@@ -1574,3 +1655,5 @@ footer {
         }
     }
 }
+
+@import 'case.scss' 
