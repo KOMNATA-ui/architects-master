@@ -198,19 +198,19 @@ function init() {
 
 // Страница проектов
 
-var fixedElem = document.getElementsByClassName('main__pageProgect--block__item'),
-    fixedElemLength = fixedElem.length,
-    i;
+// var fixedElem = document.getElementsByClassName('main__pageProgect--block__item'),
+//     fixedElemLength = fixedElem.length,
+//     i;
 
-window.addEventListener('scroll', function() {
+// window.addEventListener('scroll', function() {
 
-    for (i = 0; i < fixedElemLength; i++) {
+//     for (i = 0; i < fixedElemLength; i++) {
 
-        var imgTop = -566 + pageYOffset
-        fixedElem[i].style.transform = `translate3d(0,${imgTop}px, 0)`;
+//         var imgTop = -566 + pageYOffset
+//         fixedElem[i].style.transform = `translate3d(0,${imgTop}px, 0)`;
 
-        fixedElem[i].classList.add('i' + i);
-    }
+//         fixedElem[i].classList.add('i' + i);
+//     }
 
-});
+// });
 
