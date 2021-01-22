@@ -81,7 +81,7 @@ header {
 
         color: #000;
 
-        &:hover {
+        &:hover, &.active {
             color: #009E4F;
             font-weight: 700;
         }
@@ -692,6 +692,11 @@ footer {
             &-contact {
                 font-size: 16px;
                 line-height: 19px;
+
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
             }
 
             &-contact + &-title {
@@ -705,7 +710,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
 
                 height: 100%;
             }
@@ -714,14 +719,15 @@ footer {
                 margin-bottom: 10px;
                 position: relative;
                 width: 220px;
-                height: 30px;
+                height: 40px;
 
                 span {
                     position: absolute;
-                    top: 5px;
+                    top: 15px;
                     left: 2px;
                     line-height: 20px;
                     opacity: .5;
+                    cursor: text;
 
                     transition: top .15s ease, font-size .15s ease;
                 }
@@ -730,7 +736,9 @@ footer {
                     height: 100%;
                     width: 100%;
                     border: none;
+                    padding-top: 12px;
                     border-bottom: #ececec 1px solid;
+                    box-sizing: border-box;
 
                     transition: border-color .15s ease;
 
@@ -739,7 +747,14 @@ footer {
                         border-bottom: 2px solid #149C53;
 
                         & + span {
-                            top: -10px;
+                            top: -5px;
+                            font-size: 10px;
+                        }
+                    }
+
+                    &.active {
+                        & + span {
+                            top: -5px;
                             font-size: 10px;
                         }
                     }
@@ -1435,8 +1450,7 @@ footer {
 .copyrights {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 35%;
     padding-bottom: 35px;
 
     display: flex;
@@ -1778,7 +1792,7 @@ footer {
         .line2 {
             padding: 15px 12px 15px !important;
             h1 {
-                line-height: 40px;
+                line-height: 45px;
                 letter-spacing: -0.06em;
                 text-align: start;
             }
@@ -1899,8 +1913,8 @@ footer {
         }
 
         &-text {
-            font-size: 13px;
-            line-height: 16px;
+            font-size: 16px;
+            line-height: 20px;
             margin-bottom: 35px;
             max-width: none;
         }

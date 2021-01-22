@@ -4,11 +4,12 @@ block content
     .container.case-modules
         .case-module-1.case-module
             .line1.line
-                .text-small
-                    .placement Местоположение: Алтайский край
-                    .year Год проекта: 2019
+                .text-wrapper
+                    .text-small
+                        .placement Местоположение: Алтайский край
+                        .year Год проекта: 2019
 
-                .title Сельский дом культуры
+                    .title Сельский дом культуры
 
                 .backgrounded-img
                     .slider-wrapper#slick-1
@@ -113,10 +114,13 @@ block content
                             .slide4-contacts-text-title адрес:
                             .slide4-contacts-text-contact г.&nbsp;Новосибирск, ул.&nbsp;Максима&nbsp;Горького&nbsp;54, 3&nbsp;этаж, офис&nbsp;207
                             .slide4-contacts-text-title ТЕЛЕФОН:
-                            .slide4-contacts-text-contact +7 (999) 242 44 55
-                            .slide4-contacts-text-contact +7 (923) 333 45 98
+                            .slide4-contacts-text-contact 
+                                a(href="tel: +79992424455") +7 (999) 242 44 55
+                            .slide4-contacts-text-contact 
+                                a(href="tel: +79233334598") +7 (923) 333 45 98
                             .slide4-contacts-text-title почта:
-                            .slide4-contacts-text-contact FORMATARCHITECTS@GMAIL.COM
+                            .slide4-contacts-text-contact 
+                                a(href="mailto: FORMATARCHITECTS@GMAIL.COM") FORMATARCHITECTS@GMAIL.COM
                         .slide4-contacts-form
                             form(action="")
                                 label
@@ -125,9 +129,9 @@ block content
                                 label
                                     input(type="text", name="org_name", value="")
                                     span Название организации
-                                label
-                                    input(type="text", name="phone", value="")
-                                    span +7 (___) ___ __ __
+                                label 
+                                    input(type="text", name="phone", value="").js-phone-mask
+                                    span Номер телефона
                                 label
                                     input(type="text", name="message", value="")
                                     span Напишите ваше сообщение
@@ -140,6 +144,4 @@ block content
                     a(href="#") Задизайнено в 
                         span komnate
                     a(href="#") Политика сайта
-
-                .overlay-text формат проект формат проектформат проект формат проект
             

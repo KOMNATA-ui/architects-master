@@ -172,7 +172,7 @@ function init() {
     myPlacemark1 = new ymaps.Placemark([55.026953, 82.919684], {
       // Свойства.
       // Содержимое хинта.
-      hintContent: 'Мы всегда вам рады'
+      hintContent: 'Ул. Максима Горького 54, 3 этаж, офис 207. Мы всегда вам рады'
     }, {
       // Опции
       // Своё изображение иконки метки.
@@ -194,6 +194,21 @@ function init() {
     .add(myPlacemark1)
 
 }
+
+$(document).ready(function(){
+    $('.js-phone-mask').inputmask("+7 (999) 999 99 99");  //static mask
+
+    $('input').each(function() {
+        $(this).on('change', function() {
+            console.log($(this).val())
+            if ($(this).val() != "") {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        })
+    })
+});
 
 //Открытие меню в шапке
 
