@@ -13,12 +13,12 @@
     }
     &:after {
         content: "";
-        width: 100%;
+        width: 1px;
         position: absolute;
-        bottom: 0px;
-        height: 1px;
+        right: 0px;
+        height: 900px;
         background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLine 3s;
+        //animation: BottomTranslateXLineTop 3s;
         animation-fill-mode: forwards;
     }
     >* {
@@ -45,22 +45,22 @@
     position: relative;
     &:before {
         content: "";
-        width: 100%;
+        width: 1px;
         position: absolute;
-        bottom: 0px;
-        height: 1px;
+        left: 0px;
+        height: 900px;
         background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLine 3s;
+        //animation: BottomTranslateXLineTop 3s;
         animation-fill-mode: forwards;
     }
     &:after {
         content: "";
-        width: 100%;
+        width: 1px;
         position: absolute;
-        top: 0px;
-        height: 1px;
+        right: 0px;
+        height: 900px;
         background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLine 3s;
+        //animation: BottomTranslateXLineTop 3s;
         animation-fill-mode: forwards;
     }
     >* {
@@ -113,26 +113,27 @@
     >* {
         animation: Opacity 2s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
-        &:before {
-            content: "";
-            width: 1px;
-            position: absolute;
-            left: 0px;
-            height: 900px;
-            background: rgb(212, 212, 212);
-            //animation: BottomTranslateXLineTop 5s;
-            animation-fill-mode: forwards;
-        }
-        &:after {
-            content: "";
-            width: 100%;
-            position: absolute;
-            bottom: 0px;
-            height: 1px;
-            background: rgb(212, 212, 212);
-            //animation: BottomTranslateXLine 3s;
-            animation-fill-mode: forwards;
-        }
+
+    }
+    &:before {
+        content: "";
+        width: 1px;
+        position: absolute;
+        left: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        //animation: BottomTranslateXLineTop 5s;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 1px;
+        position: absolute;
+        right: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        //animation: BottomTranslateXLineTop 3s;
+        animation-fill-mode: forwards;
     }
 }
 
