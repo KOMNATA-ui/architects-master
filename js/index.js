@@ -195,6 +195,21 @@ function init() {
 
 }
 
+$(document).ready(function(){
+    $('.js-phone-mask').inputmask("+7 (999) 999 99 99");  //static mask
+
+    $('input').each(function() {
+        $(this).on('change', function() {
+            console.log($(this).val())
+            if ($(this).val() != "") {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        })
+    })
+});
+
 //Открытие меню в шапке
 
 

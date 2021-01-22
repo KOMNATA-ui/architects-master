@@ -719,11 +719,11 @@ footer {
                 margin-bottom: 10px;
                 position: relative;
                 width: 220px;
-                height: 35px;
+                height: 40px;
 
                 span {
                     position: absolute;
-                    top: 10px;
+                    top: 15px;
                     left: 2px;
                     line-height: 20px;
                     opacity: .5;
@@ -736,7 +736,9 @@ footer {
                     height: 100%;
                     width: 100%;
                     border: none;
+                    padding-top: 12px;
                     border-bottom: #ececec 1px solid;
+                    box-sizing: border-box;
 
                     transition: border-color .15s ease;
 
@@ -744,6 +746,13 @@ footer {
                         outline: none;
                         border-bottom: 2px solid #149C53;
 
+                        & + span {
+                            top: -5px;
+                            font-size: 10px;
+                        }
+                    }
+
+                    &.active {
                         & + span {
                             top: -5px;
                             font-size: 10px;
