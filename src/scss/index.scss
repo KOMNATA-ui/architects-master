@@ -1674,6 +1674,10 @@ footer {
     }
 
     .slide1 {
+        >div{
+            overflow: hidden;
+        }
+
         h1 {
             line-height: 46px;
         }
@@ -1754,6 +1758,7 @@ footer {
     }
 
     .slide2 {
+        overflow: hidden;
         padding-bottom: 0;
         .fp-tableCell {
             display: flex;
@@ -1812,7 +1817,7 @@ footer {
 
     .slide3 {
         padding: 20px 0;
-
+        overflow: hidden;
         h1 {
             line-height: 50px;
         }
@@ -1895,6 +1900,7 @@ footer {
     }
 
     .slide4 {
+        overflow: hidden;
         &-container {
             flex-direction: column;
         }
