@@ -180,7 +180,7 @@
         animation-fill-mode: forwards;
     }
     >* {
-        
+
     }
 }
 
@@ -198,6 +198,43 @@
         padding: 0%;
     }
   }
+
+
+.imgScrollOverfloyClass {
+    // overflow: hidden;
+    position: relative;
+    >* {
+        animation: imgScrollOverfloy 200s;
+    }
+}
+
+
+@keyframes imgScrollOverfloy {
+    from {
+        background-position-y: 0%;
+    }
+    to {
+        background-position-y: 10000%;
+    }
+}
+
+.imgSizeOverfloyClass {
+    // overflow: hidden;
+    position: relative;
+    >* {
+        animation: imgSizeOverfloy 80s;
+    }
+}
+
+
+@keyframes imgSizeOverfloy {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 200%;
+    }
+}
 
 
 

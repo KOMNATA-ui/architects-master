@@ -226,8 +226,6 @@ footer {
         transition: 10s background-position linear;
 
         &:hover {
-            background-position: bottom right;
-
             &::after {
                 content: "";
                 position: absolute;
@@ -268,7 +266,7 @@ footer {
         }
 
         &:hover {
-            background-position: bottom right;
+            //background-position: bottom right;
 
             &::before {
                 content: "";
