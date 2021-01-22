@@ -1,5 +1,26 @@
 .animationLeftTranslateX {
     overflow: hidden;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        height: 1px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLine 3s;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        height: 1px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLine 3s;
+        animation-fill-mode: forwards;
+    }
     >* {
         animation: LeftTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
@@ -21,10 +42,32 @@
 
 .animationBottomTranslateY {
     overflow: hidden;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        height: 1px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLine 3s;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        height: 1px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLine 3s;
+        animation-fill-mode: forwards;
+    }
     >* {
         animation: BottomTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
     }
+
 }
 
 @keyframes BottomTranslateX {
@@ -39,8 +82,41 @@
     }
   }
 
+@keyframes BottomTranslateXLine {
+    from {
+        left: -2300px;
+    }
+    5% {
+        left: -2300px;
+    }
+    to {
+        left: 2300px;
+    }
+}
+
 .animationOpacity {
     // overflow: hidden;
+    position: relative;
+    &:before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        height: 1px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLine 3s;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        height: 1px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLine 3s;
+        animation-fill-mode: forwards;
+    }
     >* {
         animation: Opacity 2s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;

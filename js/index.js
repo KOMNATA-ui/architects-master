@@ -7,6 +7,8 @@ new fullpage('#fullpage', {
     autoScrolling:true,
     fadingEffect:true,
     dragAndMove: false,
+    menu: '#myMenu',
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 
 
     afterLoad: function(origin, destination, direction){

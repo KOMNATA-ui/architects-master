@@ -402,6 +402,8 @@ footer {
     justify-content: center;
     align-items: center;
 
+    padding: 0px 0;
+
     .slide2-img {
         position: absolute;
         width: 60%;
@@ -458,6 +460,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 0px 0;
 
     p.mobile {
         display: none;
@@ -1935,4 +1939,22 @@ footer {
     }
 }
 
-@import 'case.scss' 
+
+/* progress bar */
+.slider-progress {
+    width: 100%;
+    height: 3px;
+    background: #eee;
+}
+.slider-progress .progress {
+    width: 0%;
+    height: 3px;
+    background: #000;
+}
+
+.slider-wrapper {
+    height: 65vh;
+}
+
+
+@import 'case.scss';

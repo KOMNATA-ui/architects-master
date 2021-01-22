@@ -10,7 +10,12 @@ block content
 
                 .title Сельский дом культуры
 
-                .backgrounded-img(style='background-image:url(../media/case3.png')
+                .backgrounded-img
+                    .slider-wrapper#slick-1
+                        .slider.slider-for
+                            .slide(style='background-image:url(../media/case3.png); height: 65vh;')
+                            .slide(style='background-image:url(../media/case3.png); height: 65vh;')
+                            .slide(style='background-image:url(../media/case3.png); height: 65vh;')
             .line2.line
                 .text Барнхаус как клуб-сарай При реконструкции решено сохранить планировочную структуру от советских архитекторов и облачить здание в новую форму:
                     ul.marked-list
@@ -20,7 +25,17 @@ block content
                 .line-inner
                     .text В планировочной структуре здания на первом этаже расположен зрительный зал на 244 места и подсобные помещения. На первом этаже перед зрительным залом отведено место для устройства дискотек — приглушённый интерьер в плане отделки позволяет в вечернее время добиться частности, а днем за счёт витража интерьер остается светлым и отрытым.
                     .slider
-                
+                        .slider-nav
+                            div
+                                img(src='../media/case3.png' style='height: 178px; wight: 300px' )
+                            div
+                                img(src='../media/case3.png' style='height: 178px; wight: 300px')
+                            div
+                                img(src='../media/case3.png' style='height: 178px; wight: 300px')
+                        .slider-progress
+                            .progress
+                        .numStart 01
+                        .numEnd 02
         
         .case-module-2.case-module
             .backgrounded-img(style='background-image:url(../media/case3.png')

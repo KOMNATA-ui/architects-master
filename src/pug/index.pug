@@ -30,7 +30,7 @@ block content
                             h6.minpage-slide-text-medium , деятельность которого направлена на качественное улучшение городской среды. Мы восстанавливаем, формируем и воспитываем культуру проектирования. 
 
                 .last-case
-                    a(href="somewhere") 
+                    a(href="somewhere")
                         div.SelectAnimationLeftTranslateY
                             p Последний кейс бюро
                         div.SelectAnimationBefore
@@ -79,7 +79,7 @@ block content
                     p.mobile.minpage-slide-text-small Мы готовы ответить на все Ваши вопросы о проектировании, реконструкции зданий и перепланировке помещений!
 
                 .slide3-img
-                    a(href="somewhere")
+                    a(href="somewhere").SelectAnimationOpacity
                         div.SelectAnimationBefore
                             p Последний кейс бюро
                             .backgrounded-img.slide3-img1(style='background-image:url(../media/case3.png')
@@ -103,7 +103,8 @@ block content
                             div.SelectAnimationBefore
                                 .inst-element.backgrounded-img(style='background-image:url(../media/case3.png')
 
-                        .overlay-text @forma_top @forma_top @forma_top @forma_top
+                        .overlay-text
+                            marquee(loop='99') @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top @forma_top
 
             .slide4.mainpage-slide.section
                 .slide4-container
@@ -149,14 +150,14 @@ block content
                     .overlay-text.SelectAnimationOpacity
                         span формат проект формат проектформат проект формат проект
             
-        .slider-controls
-            .element-wrapper
-                .slider-controls-element
-            .element-wrapper
-                .slider-controls-element
-            .element-wrapper
-                .slider-controls-element
-            .element-wrapper
-                .slider-controls-element
+        .slider-controls#myMenu
+            .element-wrapper.active(data-menuanchor="firstPage")
+                .slider-controls-element.controls
+            .element-wrapper(data-menuanchor="secondPage")
+                .slider-controls-element.controls
+            .element-wrapper(data-menuanchor="thirdPage")
+                .slider-controls-element.controls
+            .element-wrapper(data-menuanchor="fourthPage")
+                .slider-controls-element.controls
                             
 
