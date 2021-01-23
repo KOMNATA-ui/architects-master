@@ -324,7 +324,7 @@ footer {
         }
 
         h4 {
-            max-width: 280px;
+            max-width: 225px;
             margin-top: -8px;
         }
     }
@@ -337,8 +337,8 @@ footer {
     .line3 {
         padding-left: 216px;
 
-        .minpage-slide-text-small {
-            max-width: 220px;
+        .text-wrapper {
+            max-width: 205px;
             margin-right: 230px;
             padding-top: 21px;
         }
@@ -644,7 +644,7 @@ footer {
             left: 0;
 
             .ymaps-2-1-78-ground-pane {
-                filter: grayscale(100%) brightness(75%);
+                filter: grayscale(100%) brightness(95%);
             }
 
             .ymaps-2-1-78-copyrights-pane {
@@ -1812,6 +1812,7 @@ footer {
             margin-bottom: 10px;
         }
     }
+    
 
     .slide3 {
         padding: 20px 0;
@@ -1877,9 +1878,20 @@ footer {
 
         .inst-line {
             display: block;
+            width: 100%;
+            padding: 0;
+            overflow-x: auto;
+
+            .elements-wrapper {
+                width: auto;
+            }
 
             .overlay-text {
                 display: none;
+            }
+
+            .elements-wrapper > div {
+                width: auto;
             }
 
             .elements-wrapper > div + div {
