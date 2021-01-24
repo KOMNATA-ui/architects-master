@@ -16,6 +16,10 @@
     .case-module-1 {
         position: relative;
 
+        .text {
+            line-height: 20px;
+        }
+
         .progress-wrapper {
             display: flex;
             flex-direction: row;
@@ -147,7 +151,7 @@
         justify-content: center;
 
         .backgrounded-img {
-            width: calc(62.5vw*0.8 + 300px);
+            width: 80vw;
             padding-bottom: 35%;
         }
     }
@@ -339,7 +343,7 @@
     .case-module-6 {
         display: flex;
         flex-direction: column;
-        padding: 10px 15vw;
+        padding: 10px 10vw;
         margin-bottom: 80px;
 
         .line1 {

@@ -629,7 +629,7 @@ footer {
     &-content {
         width: 70%;
         height: 100%;
-        padding: 160px 15%;
+        padding: 160px 10%;
     }
 
     &-map {
@@ -666,7 +666,7 @@ footer {
         font-size: 18px;
         line-height: 22px;
 
-        max-width: 475px;
+        max-width: 455px;
         margin-bottom: 60px;
     }
 
@@ -1208,10 +1208,6 @@ footer {
 }
 
 
-
-#my-scrollbar {
-
-  }
 .slider-controls {
     position: fixed;
     left: 230px;
@@ -1357,10 +1353,6 @@ footer {
             h4 {
                 margin-top: -6px;
             }
-        }
-
-        .line3 .minpage-slide-text-small {
-            margin-right: 150px;
         }
 
         .line4 .text {
@@ -1729,6 +1721,9 @@ footer {
 
         .line3 {
             margin: 0;
+            .text-wrapper {
+                margin-right: 0;
+            }
             .minpage-slide-text-small {
                 display: none;
             }
