@@ -12,11 +12,11 @@ block content
                     .title Сельский дом культуры
 
                 .backgrounded-img
-                    .slider-wrapper#slick-1
+                    .slider-wrapper.slideshow#slick-1
                         .slider.slider-for
-                            .slide(style='background-image:url(../media/case-1.png);')
-                            .slide(style='background-image:url(../media/case-1.png);')
-                            .slide(style='background-image:url(../media/case-1.png);')
+                            .slide(style='background-image:url(../media/case3.png);')
+                            .slide(style='background-image:url(../media/coverPage.png);')
+                            .slide(style='background-image:url(../media/2-1.png);')
             .line2.line
                 .text Барнхаус как клуб-сарай При реконструкции решено сохранить планировочную структуру от советских архитекторов и облачить здание в новую форму:
                     ul.marked-list
@@ -28,9 +28,9 @@ block content
                     .slider-wrapper-small
                         .slider
                             .slider-nav
-                                div(style='background-image:url(../media/case-2.png);')
-                                div(style='background-image:url(../media/case-2.png);')
-                                div(style='background-image:url(../media/case-2.png);')
+                                div(style='background-image:url(../media/case3.png);')
+                                div(style='background-image:url(../media/coverPage.png);')
+                                div(style='background-image:url(../media/2-1.png);')
                             .progress-wrapper
                                 .numStart 01
                                 .slider-progress
@@ -38,7 +38,7 @@ block content
                                 .numEnd 02
         
         .case-module-2.case-module
-            .backgrounded-img(style='background-image:url(../media/case-3.png')
+            .backgrounded-img(style='background-image:url(../media/case-3.png')#scrollImgCase
 
         .case-module-3.case-module
             .col1
@@ -96,9 +96,9 @@ block content
                 .text
                     p Задача организации, в особенности же рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.
                     p Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям каждого.
-                .plan-open посмотреть план
+                .plan-open.btn.btn-info( data-toggle="modal" data-target="#popup-image-gallery" tabindex="0") посмотреть план
             .col2
-                .backgrounded-img(style='background-image:url(../media/case-3.png') 
+                .backgrounded-img(style='background-image:url(../media/case-3.png')
 
         .case-module-last.case-module
             .slide4-container
@@ -143,4 +143,4 @@ block content
                     a(href="#") Задизайнено в 
                         span komnate
                     a(href="#") Политика сайта
-            
+

@@ -8,6 +8,7 @@ new fullpage('#fullpage', {
     fadingEffect:true,
     dragAndMove: false,
     menu: '#myMenu',
+    responsiveWidth: 1024,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 
 
@@ -53,6 +54,25 @@ new fullpage('#fullpage', {
             SelectAnimationBefore[i].classList.add('animationBefore');
         }
 
+        // -- Анимация animationBefore
+        var imgSizeOverfloyClass = document.getElementsByClassName('imgSizeOverfloyClassCont'),
+            imgSizeOverfloyClassLength = imgSizeOverfloyClass.length,
+            i;
+
+        for (i = 0; i < imgSizeOverfloyClassLength; i++) {
+            imgSizeOverfloyClass[i].classList.remove('imgSizeOverfloyClassOut');
+            imgSizeOverfloyClass[i].classList.add('imgSizeOverfloyClass');
+        }
+
+
+        var imgScrollOverfloyClass = document.getElementsByClassName('imgScrollOverfloyClassCont'),
+            imgScrollOverfloyClassLength = imgScrollOverfloyClass.length,
+            i;
+
+        for (i = 0; i < imgScrollOverfloyClassLength; i++) {
+            imgScrollOverfloyClass[i].classList.remove('imgScrollOverfloyClassOut');
+            imgScrollOverfloyClass[i].classList.add('imgScrollOverfloyClass');
+        }
 
 
         // if(destination.index == 0){
@@ -118,6 +138,30 @@ new fullpage('#fullpage', {
             SelectAnimationBefore[i].classList.remove('animationBefore');
             SelectAnimationBefore[i].classList.add('animationBeforeOut');
         }
+
+
+        // -- Анимация animationBeforeScalle
+        var imgSizeOverfloyClass = document.getElementsByClassName('imgSizeOverfloyClassCont'),
+            imgSizeOverfloyClassLength = imgSizeOverfloyClass.length,
+            i;
+
+        for (i = 0; i < imgSizeOverfloyClassLength; i++) {
+            imgSizeOverfloyClass[i].classList.remove('imgSizeOverfloyClass');
+            imgSizeOverfloyClass[i].classList.add('imgSizeOverfloyClassOut');
+        }
+
+
+
+        var imgScrollOverfloyClass = document.getElementsByClassName('imgScrollOverfloyClassCont'),
+            imgScrollOverfloyClassLength = imgScrollOverfloyClass.length,
+            i;
+
+        for (i = 0; i < imgScrollOverfloyClassLength; i++) {
+            imgScrollOverfloyClass[i].classList.remove('imgScrollOverfloyClass');
+            imgScrollOverfloyClass[i].classList.add('imgScrollOverfloyClassOut');
+        }
+
+
 
 
         // clearTimeout(timeoutId);
@@ -231,3 +275,80 @@ $(document).ready(function(){
 
 // });
 
+
+
+
+function ChangeOver(x) {
+    document.getElementById('pageImgOne').classList.remove('greenOut');
+    document.getElementById('pageImgTwo').classList.remove('greenOut');
+    document.getElementById('pageImgOne').classList.add('green');
+    document.getElementById('pageImgTwo').classList.add('green');
+
+    document.getElementById('progectHoverTwo').classList.add('active_HoverOut');
+    document.getElementById('progectHoverTwo').classList.remove('active_Hover');
+};
+
+function ChangeOverOut(x) {
+    document.getElementById('pageImgOne').classList.remove('green');
+    document.getElementById('pageImgTwo').classList.remove('green');
+    document.getElementById('pageImgOne').classList.add('greenOut');
+    document.getElementById('pageImgTwo').classList.add('greenOut');
+
+    document.getElementById('progectHoverTwo').classList.add('active_Hover');
+    document.getElementById('progectHoverTwo').classList.remove('active_HoverOut');
+
+    console.log("dssd")
+};
+
+
+$(document).ready(function() {
+    $(".hamburger-menu-button").click(function() {
+        $(".main-box").toggleClass("main-box-clicked");
+        $(".hamburger-box").toggleClass("hamburger-box-clicked");
+    });
+
+    var cursor = $(".cursor");
+
+    $(window).mousemove(function(e) {
+        cursor.css({
+            top: e.clientY - cursor.height() / 2,
+            left: e.clientX - cursor.width() / 2
+        });
+    });
+
+    $(window)
+        .mouseleave(function() {
+            cursor.css({
+                opacity: "0"
+            });
+        })
+        .mouseenter(function() {
+            cursor.css({
+                opacity: "1"
+            });
+        });
+
+    $("a")
+        .mouseenter(function() {
+            cursor.css({
+                transform: "scale(3.2)"
+            });
+        })
+        .mouseleave(function() {
+            cursor.css({
+                transform: "scale(1)"
+            });
+        });
+
+    $(window)
+        .mousedown(function() {
+            cursor.css({
+                transform: "scale(.2)"
+            });
+        })
+        .mouseup(function() {
+            cursor.css({
+                transform: "scale(1)"
+            });
+        });
+});

@@ -1,26 +1,26 @@
 .animationLeftTranslateX {
     overflow: hidden;
     position: relative;
-    &:before {
-        content: "";
-        width: 1px;
-        position: absolute;
-        left: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 3s;
-        animation-fill-mode: forwards;
-    }
-    &:after {
-        content: "";
-        width: 1px;
-        position: absolute;
-        right: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 3s;
-        animation-fill-mode: forwards;
-    }
+    //&:before {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 3s;
+    //    animation-fill-mode: forwards;
+    //}
+    //&:after {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    right: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 3s;
+    //    animation-fill-mode: forwards;
+    //}
     >* {
         animation: LeftTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
@@ -43,26 +43,26 @@
 .animationBottomTranslateY {
     overflow: hidden;
     position: relative;
-    &:before {
-        content: "";
-        width: 1px;
-        position: absolute;
-        left: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 3s;
-        animation-fill-mode: forwards;
-    }
-    &:after {
-        content: "";
-        width: 1px;
-        position: absolute;
-        right: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 3s;
-        animation-fill-mode: forwards;
-    }
+    //&:before {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 3s;
+    //    animation-fill-mode: forwards;
+    //}
+    //&:after {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    right: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 3s;
+    //    animation-fill-mode: forwards;
+    //}
     >* {
         animation: BottomTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
@@ -115,26 +115,26 @@
         animation-fill-mode: forwards;
 
     }
-    &:before {
-        content: "";
-        width: 1px;
-        position: absolute;
-        left: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 5s;
-        animation-fill-mode: forwards;
-    }
-    &:after {
-        content: "";
-        width: 1px;
-        position: absolute;
-        right: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 3s;
-        animation-fill-mode: forwards;
-    }
+    //&:before {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 5s;
+    //    animation-fill-mode: forwards;
+    //}
+    //&:after {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    right: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 3s;
+    //    animation-fill-mode: forwards;
+    //}
 }
 
 @keyframes Opacity {
@@ -157,16 +157,18 @@
 .animationBefore {
     // overflow: hidden;
     position: relative;
-    &:after {
-        content: "";
-        width: 1px;
-        position: absolute;
-        left: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        //animation: BottomTranslateXLineTop 3s;
-        animation-fill-mode: forwards;
-    }
+    //&:after {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    //animation: BottomTranslateXLineTop 3s;
+    //    animation-fill-mode: forwards;
+    //}
+    animation: BeforeOpacity 3s cubic-bezier(0.76, 0, 0.24, 1) ;
+    animation-fill-mode: forwards;
     &::before {
         content: '';
         position: absolute;
@@ -190,6 +192,7 @@
     }
     15% {
         padding-right: 100%;
+
     }
     55% {
         padding-right: 100%;
@@ -199,12 +202,37 @@
     }
   }
 
+@keyframes BeforeOpacity {
+    from {
+        opacity: 0;
+    }
+    15% {
+        opacity: .5;
+    }
+    55% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .imgScrollOverfloyClass {
     // overflow: hidden;
     position: relative;
     >* {
-        animation: imgScrollOverfloy 200s;
+        animation: imgScrollOverfloy 6s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.imgScrollOverfloyClassOut {
+    // overflow: hidden;
+    position: relative;
+    >* {
+        animation: imgScrollOverfloyOut 0.5s;
+        animation-fill-mode: forwards;
     }
 }
 
@@ -214,25 +242,53 @@
         background-position-y: 0%;
     }
     to {
-        background-position-y: 10000%;
+        background-position-y: 20%;
+    }
+}
+
+@keyframes imgScrollOverfloyOut {
+    from {
+        background-position-y: 20%;
+    }
+    to {
+        background-position-y: 0%;
     }
 }
 
 .imgSizeOverfloyClass {
     // overflow: hidden;
     position: relative;
-    >* {
-        animation: imgSizeOverfloy 80s;
+    >div {
+        animation: imgSizeOverfloy 6s;
+        animation-fill-mode: forwards;
     }
 }
-
 
 @keyframes imgSizeOverfloy {
     from {
         background-size: 100%;
     }
     to {
-        background-size: 200%;
+        background-size: 110%;
+    }
+}
+
+
+.imgSizeOverfloyClassOut {
+    // overflow: hidden;
+    position: relative;
+    >div {
+        animation: imgSizeOverfloyOut 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes imgSizeOverfloyOut {
+    from {
+        background-size: 110%;
+    }
+    to {
+        background-size: 100%;
     }
 }
 
@@ -306,6 +362,8 @@
 .animationBeforeOut {
     // overflow: hidden;
     position: relative;
+    animation: BeforeOpacityOut 3s cubic-bezier(0.76, 0, 0.24, 1) ;
+    animation-fill-mode: forwards;
     &::before {
         content: '';
         position: absolute;
@@ -331,5 +389,21 @@
 
     to {
         padding: 100%;
+    }
+}
+
+
+@keyframes BeforeOpacityOut {
+    from {
+        opacity: 1;
+    }
+    15% {
+        opacity: 0.3;
+    }
+    55% {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 0;
     }
 }

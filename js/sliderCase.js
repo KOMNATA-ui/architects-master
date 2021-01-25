@@ -11,10 +11,15 @@ $(document).ready(function(){
     $slick = $('.slider-for');
     $slick.slick({
         draggable: true,
-        adaptiveHeight: false,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        arrows: false,
         dots: false,
-        mobileFirst: true,
-        pauseOnDotsHover: true,
+        fade: true,
+        speed: 500,
+        infinite: true,
+        cssEase: 'ease-in-out',
+        touchThreshold: 100
     });
 
     $slickNav = $('.slider-nav');
@@ -55,8 +60,8 @@ $(document).ready(function(){
                 $slick.slick('slickNext');
                 $slickNav.slick('slickNext')
                 slickNavNum = $slick.slick('slickCurrentSlide');
-                $('.numStart').html(slickNavNum+1);
-                $('.numEnd').html(slickNavNum+2);
+                $('.numStart').html('0' + (slickNavNum + 1));
+                $('.numEnd').html('0' + (slickNavNum + 2));
                 console.log(slickNavNum)
                 startProgressbar();
             }
@@ -73,4 +78,10 @@ $(document).ready(function(){
 
     startProgressbar();
 
+});
+
+
+window.addEventListener('scroll', function() {
+    document.getElementById('scrollImgCase').style.top = -pageYOffset/30 + 'px';
+    document.getElementById('scrollImgCase').style.backgroundSize = 100 + pageYOffset/40 +`%`;
 });

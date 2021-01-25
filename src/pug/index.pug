@@ -7,10 +7,14 @@ block content
                 .line1.line
                     div.SelectAnimationLeftTranslateX
                         h1.minpage-slide-title Смена
-                    div.SelectAnimationBefore.imgScrollOverfloyClass
-                        .backgrounded-img.slide1-img1(style='background-image:url(../media/1-1.png')
-                    div.SelectAnimationOpacity
-                        h4.minpage-slide-text-big За&nbsp;нас говорят объекты 
+                    div.SelectAnimationBefore.imgScrollOverfloyClassCont
+                        .backgrounded-img.slide1-img1#pageImgOne(style='background-image:url(../media/1-1.png', onmouseover="ChangeOver(this)", onmouseout="ChangeOverOut(this)")
+                    div.SelectAnimationOpacity(style="overflow: hidden;\n" +
+                    "                    display: grid;\n" +
+                    "                    gap: 0px;\n" +
+                    "                    height: 46px; width: 240px;")
+                        h4.minpage-slide-text-big#progectHoverTwo За&nbsp;нас&nbsp;говорят объекты
+                        h4.minpage-slide-text-big новосибирск&nbsp;мега 2020
                 
                 .line2.line
                     div.SelectAnimationLeftTranslateY
@@ -34,8 +38,8 @@ block content
                     a(href="somewhere")
                         div.SelectAnimationLeftTranslateY
                             p Последний кейс бюро
-                        div.SelectAnimationBefore.imgSizeOverfloyClass
-                            .backgrounded-img.slide1-img2(style='background-image:url(../media/1-2.png')
+                        div.SelectAnimationBefore.imgSizeOverfloyClassCont
+                            .backgrounded-img.slide1-img2#pageImgTwo(style='background-image:url(../media/1-2.png', , onmouseover="ChangeOver(this)", onmouseout="ChangeOverOut(this)")
                                 .img-text
                                     .img-text-title новосибирск мега 2020
                                     .img-text-year
@@ -46,7 +50,7 @@ block content
             
             .slide2.mainpage-slide.section
                 .slide2-img
-                    div.SelectAnimationBefore.imgSizeOverfloyClass
+                    div.SelectAnimationBefore.imgSizeOverfloyClassCont
                         p Команда Format Architect
                         .backgrounded-img.slide2-img1(style='background-image:url(../media/2-1.png')
                 .line1.line
@@ -84,9 +88,10 @@ block content
                     p.mobile.minpage-slide-text-small Мы&nbsp;готовы ответить на&nbsp;все Ваши вопросы о&nbsp;проектировании, реконструкции зданий и&nbsp;перепланировке помещений!
 
                 .slide3-img
-                    a(href="somewhere").SelectAnimationOpacity
-                        div.SelectAnimationBefore.imgSizeOverfloyClass
-                            p Директор: Дерябина Марина Александровна
+                    a(href="somewhere")
+                        div.SelectAnimationBefore.imgSizeOverfloyClassCont
+                            div.SelectAnimationOpacity
+                                p Директор: Дерябина Марина Александровна
                             .backgrounded-img.slide3-img1(style='background-image:url(../media/3-1.png')
 
                 .line4.line
@@ -158,12 +163,11 @@ block content
 
         .slider-controls#myMenu
             .element-wrapper.active(data-menuanchor="firstPage")
-                .slider-controls-element.controls
+                a.slider-controls-element.controls(href="#firstPage")
             .element-wrapper(data-menuanchor="secondPage")
-                .slider-controls-element.controls
+                a.slider-controls-element.controls(href="#secondPage")
             .element-wrapper(data-menuanchor="thirdPage")
-                .slider-controls-element.controls
+                a.slider-controls-element.controls(href="#thirdPage")
             .element-wrapper(data-menuanchor="fourthPage")
-                .slider-controls-element.controls
-                            
+                a.slider-controls-element.controls(href="#fourthPage")
 

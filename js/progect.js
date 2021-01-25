@@ -14,34 +14,41 @@ var select8 = document.getElementById('select8');
 
 scrollbar.addListener(function(status) {
     var offset = status.offset;
-    var scale = 100
+    var scale = 140
 
-    select1.style.top = offset.y + 'px';
-    // select1.style.backgroundSize = scale + (offset.y/100) +`%`; 
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0)
+    {
 
-    select2.style.top = offset.y + 'px';
-    // select2.style.backgroundSize = scale + (offset.y/100) +`%`; 
+    }else {
+        select1.style.top = offset.y + 'px';
+        // select1.style.backgroundSize = scale + (offset.y/100) +`%`;
 
-    select3.style.top = offset.y + 'px';
-    // select3.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select2.style.top = offset.y + 'px';
+        // select2.style.backgroundSize = scale + (offset.y/100) +`%`;
 
-    select4.style.top = offset.y + 'px';
-    // select4.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select3.style.top = offset.y + 'px';
+        // select3.style.backgroundSize = scale + (offset.y/100) +`%`;
 
-    select5.style.top = offset.y + 'px';
-    // select1.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select4.style.top = offset.y + 'px';
+        // select4.style.backgroundSize = scale + (offset.y/100) +`%`;
 
-    select6.style.top = offset.y + 'px';
-    // select2.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select5.style.top = offset.y + 'px';
+        // select1.style.backgroundSize = scale + (offset.y/100) +`%`;
 
-    select7.style.top = offset.y + 'px';
-    // select3.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select6.style.top = offset.y + 'px';
+        // select2.style.backgroundSize = scale + (offset.y/100) +`%`;
 
-    select8.style.top = offset.y + 'px';
-    // select4.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select7.style.top = offset.y + 'px';
+        // select3.style.backgroundSize = scale + (offset.y/100) +`%`;
+
+        select8.style.top = offset.y + 'px';
+        // select4.style.backgroundSize = scale + (offset.y/100) +`%`;
+
+    }
+
 
     if(offset.y < window.innerHeight) {
-        select1.style.backgroundSize = scale + (offset.y/100) +`%`; 
+        select1.style.backgroundSize = scale + (offset.y/100) +`%` ;
     }
     else if (offset.y < window.innerHeight *2) {
         select2.style.backgroundSize = scale + ((offset.y - window.innerHeight)/100) +`%`; 
