@@ -37,6 +37,12 @@
     font-style: normal;
 }
 
+html,
+* {
+    cursor: none;
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     position: relative;
@@ -45,8 +51,16 @@ body {
     letter-spacing: -0.02em;
 }
 
-* {
-    box-sizing: border-box;
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #009e4ecc;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    z-index: 999999;
+    transition: transform 0.2s;
 }
 
 header {
@@ -118,7 +132,6 @@ footer {
     a {
         font-size: 19px;
         line-height: 22px;
-        cursor: pointer;
         text-decoration: none;
     }
 }
@@ -172,7 +185,6 @@ footer {
     font-weight: normal;
     text-transform: uppercase;
     color: #313131;
-    width: 230px;
 }
 
 .minpage-slide-text-medium {
@@ -189,6 +201,13 @@ footer {
     line-height: 20px;
     font-weight: normal;
     color: #313131;
+}
+
+.text-change {
+    overflow: hidden;
+    display: grid;
+    gap: 0px;
+    height: 62px;
 }
 
 .line {
@@ -315,7 +334,7 @@ footer {
         }
 
         h4 {
-            max-width: 225px;
+            max-width: 300px;
             //margin-top: -8px;
         }
     }
@@ -466,7 +485,6 @@ footer {
 
         a {
             text-decoration: none;
-            cursor: pointer;
         }
 
         .SelectAnimationOpacity {
@@ -691,7 +709,6 @@ footer {
 
                 a {
                     text-decoration: none;
-                    cursor: pointer;
                 }
             }
 
@@ -723,7 +740,6 @@ footer {
                     left: 2px;
                     line-height: 20px;
                     opacity: .5;
-                    cursor: text;
 
                     transition: top .15s ease, font-size .15s ease;
                 }
@@ -769,7 +785,6 @@ footer {
                 font-weight: bold;
                 border: none;
                 width: 135px;
-                cursor: pointer;
                 transition: opacity .15s ease;
 
                 &:hover {
@@ -1224,7 +1239,6 @@ footer {
         justify-content: center;
         align-items: flex-end;
         padding: 5px;
-        cursor: pointer;
 
         &:hover, &.active {
             .slider-controls-element {
@@ -1340,6 +1354,9 @@ footer {
 
 
 @media screen and (max-width: 1444px) {
+    .text-change {
+        height: 52px;
+    }
     .minpage-slide-title,  .minpage-slide-title-smooth {
         font-size: 120px;
     }
@@ -1457,7 +1474,6 @@ footer {
 
     a {
         color: #808080;
-        cursor: pointer;
         font-size: 16px;
         text-decoration: none;
 
@@ -1545,7 +1561,6 @@ footer {
             display: inline-block;
             overflow: visible;
             margin: 0;
-            cursor: pointer;
             transition-timing-function: linear;
             transition-duration: .15s;
             transition-property: opacity,filter;
@@ -2133,23 +2148,5 @@ footer {
         background-size: 130%;
     }
 }
-
-.cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #009e4ecc;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    z-index: 999999;
-    transition: transform 0.2s;
-}
-
-html,
-* {
-    cursor: none;
-}
-
 
 @import 'case.scss';
