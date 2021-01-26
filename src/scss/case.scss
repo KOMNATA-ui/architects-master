@@ -717,6 +717,11 @@
     .case-modules .case-module-last .overlay-text {
         display: none;
     }
+
+    .case-modules .case-module-1 .line1 .title , .slide4-title {
+        font-size: 65px;
+        line-height: 55px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
