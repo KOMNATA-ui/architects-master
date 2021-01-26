@@ -92,6 +92,19 @@
                 color: #000;
                 text-transform: uppercase;
                 padding-right: 20px;
+
+                @media (max-width: 1760px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1441px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1281px) {
+                    font-size: 60px;
+                    line-height: 52px;
+                }
             }
 
             .backgrounded-img {
@@ -106,11 +119,11 @@
         .line2 {
             padding-left: 10vw;
             padding-top: 50px;
-            padding-right: 10vw;
+            padding-right: 11vw;
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: space-between;
+            align-items: baseline;
 
             &>.text {
                 width: 33vw;
@@ -124,7 +137,7 @@
                 justify-content: space-between;
 
                 .text {
-                    max-width: 400px;
+                    max-width: 361px;
                     padding-right: 20px;
                 }
             }
@@ -178,6 +191,19 @@
                 text-transform: uppercase;
                 letter-spacing: -0.06em;
                 margin-bottom: 25px;
+
+                @media (max-width: 1760px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1441px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1281px) {
+                    font-size: 60px;
+                    line-height: 52px;
+                }
             }
 
             .text {
@@ -272,6 +298,19 @@
                 text-transform: uppercase;
                 letter-spacing: -0.06em;
                 margin-bottom: 25px;
+
+                @media (max-width: 1760px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1441px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1281px) {
+                    font-size: 60px;
+                    line-height: 52px;
+                }
             }
 
             p {
@@ -361,6 +400,18 @@
                 line-height: 70px;
                 letter-spacing: -0.06em;
                 text-transform: uppercase;
+                @media (max-width: 1760px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1441px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1281px) {
+                    font-size: 60px;
+                    line-height: 52px;
+                }
             }
 
             .text {
@@ -402,6 +453,18 @@
                 line-height: 70px;
                 letter-spacing: -0.06em;
                 text-transform: uppercase;
+                @media (max-width: 1760px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1441px) {
+                    font-size: 70px;
+                    line-height: 62px;
+                }
+                @media (max-width: 1281px) {
+                    font-size: 60px;
+                    line-height: 52px;
+                }
             }
 
             .text {
@@ -491,7 +554,7 @@
                     white-space: nowrap;
 
                     position: relative;
-                    top: 25px;
+                    top: 9.5px;
                     z-index: 3;
 
                     padding: 0 120px 25px 25px;
@@ -504,7 +567,7 @@
                     left: 0;
                     right: 0;
                     height: 200px;
-                    z-index: 2;
+                    z-index: 0;
 
                     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
                     opacity: 0.5;

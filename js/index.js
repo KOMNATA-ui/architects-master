@@ -280,9 +280,7 @@ $(document).ready(function(){
 
 function ChangeOver(x) {
     document.getElementById('pageImgOne').classList.remove('greenOut');
-    document.getElementById('pageImgTwo').classList.remove('greenOut');
     document.getElementById('pageImgOne').classList.add('green');
-    document.getElementById('pageImgTwo').classList.add('green');
 
     document.getElementById('progectHoverTwo').classList.add('active_HoverOut');
     document.getElementById('progectHoverTwo').classList.remove('active_Hover');
@@ -290,8 +288,25 @@ function ChangeOver(x) {
 
 function ChangeOverOut(x) {
     document.getElementById('pageImgOne').classList.remove('green');
-    document.getElementById('pageImgTwo').classList.remove('green');
     document.getElementById('pageImgOne').classList.add('greenOut');
+
+    document.getElementById('progectHoverTwo').classList.add('active_Hover');
+    document.getElementById('progectHoverTwo').classList.remove('active_HoverOut');
+
+    console.log("dssd")
+};
+
+
+function ChangeOver2(x) {
+    document.getElementById('pageImgTwo').classList.remove('greenOut');
+    document.getElementById('pageImgTwo').classList.add('green');
+
+    document.getElementById('progectHoverTwo').classList.add('active_HoverOut');
+    document.getElementById('progectHoverTwo').classList.remove('active_Hover');
+};
+
+function ChangeOverOut2(x) {
+    document.getElementById('pageImgTwo').classList.remove('green');
     document.getElementById('pageImgTwo').classList.add('greenOut');
 
     document.getElementById('progectHoverTwo').classList.add('active_Hover');
@@ -351,4 +366,14 @@ $(document).ready(function() {
                 transform: "scale(1)"
             });
         });
+});
+
+
+$(document).on('ready', function () {
+    var $preloader = $('#preloader'),
+        $spinner   = $preloader.find('.spin');
+    $spinner.fadeOut();
+    $preloader.delay(20).fadeOut('slow');
+
+
 });
