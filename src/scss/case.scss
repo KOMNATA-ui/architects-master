@@ -5,7 +5,7 @@
 
         overflow: hidden;
 
-        margin: 120px 0;
+        margin: 200px 0;
 
         &:first-child {
             margin-top: 0;
@@ -125,7 +125,7 @@
 
                 .text {
                     max-width: 400px;
-                    padding-right: 20px;
+                    padding-right: 40px;
                 }
             }
 
@@ -334,6 +334,9 @@
         }
 
         .line2 {
+            .text {
+                padding-left: 35px;
+            }
             .number {
                 right: auto;
                 left: calc(100% + 10px);
