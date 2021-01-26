@@ -248,6 +248,12 @@ footer {
 
     height: 100%;
 
+    @media screen and (min-width: 1024px) {
+        & > .fp-tableCell {
+            vertical-align: bottom;
+        }
+    }
+
     .slide1-img1 {
         height: 112px;
         width: 24.4vw;
@@ -370,6 +376,7 @@ footer {
 
     .line4 {
         margin-top: 50px;
+        height: 32vh;
         .text {
             max-width: 550px;
             margin-left: 660px;
