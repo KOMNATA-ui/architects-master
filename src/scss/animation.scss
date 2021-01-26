@@ -1,28 +1,28 @@
 .animationLeftTranslateX {
     overflow: hidden;
     position: relative;
-    //&:before {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    left: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 3s;
-    //    animation-fill-mode: forwards;
-    //}
-    //&:after {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    right: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 3s;
-    //    animation-fill-mode: forwards;
-    //}
+    &:before {
+        content: "";
+        width: 1px;
+        position: absolute;
+        left: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s ;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 1px;
+        position: absolute;
+        right: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s ;
+        animation-fill-mode: forwards;
+    }
     >* {
-        animation: LeftTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: LeftTranslateX 2.5s ;
         animation-fill-mode: forwards;
     }
 }
@@ -31,7 +31,7 @@
     from {
         transform: translateX(-1000px)
     }
-    15% {
+    25% {
         transform: translateX(-1000px)
     }
 
@@ -43,28 +43,28 @@
 .animationBottomTranslateY {
     overflow: hidden;
     position: relative;
-    //&:before {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    left: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 3s;
-    //    animation-fill-mode: forwards;
-    //}
-    //&:after {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    right: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 3s;
-    //    animation-fill-mode: forwards;
-    //}
+    &:before {
+        content: "";
+        width: 1px;
+        position: absolute;
+        left: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s ;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 1px;
+        position: absolute;
+        right: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s  ;
+        animation-fill-mode: forwards;
+    }
     >* {
-        animation: BottomTranslateX 1s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: BottomTranslateX 2.5s ;
         animation-fill-mode: forwards;
     }
 
@@ -74,7 +74,7 @@
     from {
         transform: translateY(250px)
     }
-    15% {
+    25% {
         transform: translateY(250px)
     }
     to {
@@ -96,13 +96,10 @@
 
 @keyframes BottomTranslateXLineTop {
     from {
-        Top: -2300px;
-    }
-    5% {
-        Top: -2300px;
+        Top: -1600px;
     }
     to {
-        Top: 2300px;
+        Top: 1600px;
     }
 }
 
@@ -111,30 +108,30 @@
     position: relative;
 
     >* {
-        animation: Opacity 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: Opacity 3s ;
         animation-fill-mode: forwards;
-
+        position: relative;
     }
-    //&:before {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    left: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 5s;
-    //    animation-fill-mode: forwards;
-    //}
-    //&:after {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    right: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 3s;
-    //    animation-fill-mode: forwards;
-    //}
+    &:before {
+        content: "";
+        width: 1px;
+        position: absolute;
+        left: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
+    &:after {
+        content: "";
+        width: 1px;
+        position: absolute;
+        right: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
 }
 
 @keyframes Opacity {
@@ -157,16 +154,16 @@
 .animationBefore {
     // overflow: hidden;
     position: relative;
-    //&:after {
-    //    content: "";
-    //    width: 1px;
-    //    position: absolute;
-    //    left: 0px;
-    //    height: 900px;
-    //    background: rgb(212, 212, 212);
-    //    //animation: BottomTranslateXLineTop 3s;
-    //    animation-fill-mode: forwards;
-    //}
+    &:after {
+        content: "";
+        width: 1px;
+        position: absolute;
+        left: 0px;
+        height: 900px;
+        background: rgb(212, 212, 212);
+        animation: BottomTranslateXLineTop 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation-fill-mode: forwards;
+    }
     animation: BeforeOpacity 3s cubic-bezier(0.76, 0, 0.24, 1) ;
     animation-fill-mode: forwards;
     &::before {
@@ -178,7 +175,7 @@
         background:
                 #fff;
         z-index: 99;
-        animation: Before 1.2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: Before 2.2s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
     }
     >* {

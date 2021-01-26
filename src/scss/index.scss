@@ -371,6 +371,7 @@ footer {
             max-width: 205px;
             margin-right: 230px;
             padding-top: 21px;
+            position: relative;
         }
     }
 
@@ -572,7 +573,7 @@ footer {
 
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: end;
 
         p {
             margin-bottom: 20px;
@@ -2253,6 +2254,7 @@ footer {
     margin-left: -56px;
     position: relative;
 }
+
 
 
 @import 'case.scss';

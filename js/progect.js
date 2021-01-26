@@ -47,29 +47,29 @@ scrollbar.addListener(function(status) {
     }
 
 
-    if(offset.y < window.innerHeight) {
-        select1.style.backgroundSize = scale + (offset.y/100) +`%` ;
+    if(offset.y < (window.innerHeight*85/100)) {
+        select1.style.backgroundSize = scale - (offset.y/100) +`%` ;
     }
-    else if (offset.y < window.innerHeight *2) {
-        select2.style.backgroundSize = scale + ((offset.y - window.innerHeight)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *2) {
+        select2.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100))/100) +`%`;
     }
-    else if (offset.y < window.innerHeight *3) {
-        select3.style.backgroundSize = scale + ((offset.y - window.innerHeight*2)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *3) {
+        select3.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100)*2)/100) +`%`;
     }
-    else if (offset.y < window.innerHeight *4) {
-        select4.style.backgroundSize = scale + ((offset.y - window.innerHeight*3)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *4) {
+        select4.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100)*3)/100) +`%`;
     }
-    else if (offset.y < window.innerHeight *5) {
-        select5.style.backgroundSize = scale + ((offset.y - window.innerHeight*4)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *5) {
+        select5.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100))/100) +`%`;
     }
-    else if (offset.y < window.innerHeight *6) {
-        select6.style.backgroundSize = scale + ((offset.y - window.innerHeight*5)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *6) {
+        select6.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100)*5)/100) +`%`;
     }
-    else if (offset.y < window.innerHeight *7) {
-        select7.style.backgroundSize = scale + ((offset.y - window.innerHeight*6)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *7) {
+        select7.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100)*6)/100) +`%`;
     }
-    else if (offset.y < window.innerHeight *8) {
-        select8.style.backgroundSize = scale + ((offset.y - window.innerHeight*7)/100) +`%`; 
+    else if (offset.y < (window.innerHeight*85/100) *8) {
+        select8.style.backgroundSize = scale - ((offset.y - (window.innerHeight*85/100)*7)/100) +`%`;
     }
 });
 
