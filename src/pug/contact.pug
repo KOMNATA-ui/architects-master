@@ -1,0 +1,50 @@
+extends views/layout.pug
+
+block content
+    .container
+        .first-screen#fullpage
+            .slide4.mainpage-slide.section
+                .slide4-container
+                    .slide4-content
+                        div.SelectAnimationLeftTranslateX
+                            .slide4-title Давайте обсудим ваш&nbsp;проект!
+                        div.SelectAnimationOpacity
+                            .slide4-text Мы&nbsp;готовы ответить на&nbsp;все Ваши вопросы о&nbsp;проектировании, реконструкции зданий и&nbsp;перепланировке помещений! Оставьте номер телефона ниже, и&nbsp;наш специалист свяжется с&nbsp;вами!
+
+                        .slide4-contacts
+                            .slide4-contacts-text.SelectAnimationOpacity
+                                .slide4-contacts-text-title адрес:
+                                .slide4-contacts-text-contact г.&nbsp;Новосибирск, ул.&nbsp;Максима&nbsp;Горького&nbsp;54, 3&nbsp;этаж, офис&nbsp;207
+                                .slide4-contacts-text-title ТЕЛЕФОН:
+                                .slide4-contacts-text-contact
+                                    a(href="tel: +79992424455") +7&nbsp;(999)&nbsp;242&nbsp;44&nbsp;55
+                                .slide4-contacts-text-contact
+                                    a(href="tel: +79233334598") +7&nbsp;(923)&nbsp;333&nbsp;45&nbsp;98
+                                .slide4-contacts-text-title почта:
+                                .slide4-contacts-text-contact
+                                    a(href="mailto: FORMATARCHITECTS@GMAIL.COM") FORMATARCHITECTS@GMAIL.COM
+                            .slide4-contacts-form
+                                form(action="").SelectAnimationLeftTranslateY
+                                    label.SelectAnimationLeftTranslateY
+                                        input(type="text", name="customer_name", value="")
+                                        span Ваше имя
+                                    label.SelectAnimationLeftTranslateY
+                                        input(type="text", name="org_name", value="")
+                                        span Название организации
+                                    label.SelectAnimationLeftTranslateY
+                                        input(type="text", name="phone", value="").js-phone-mask
+                                        span Номер телефона
+                                    label.SelectAnimationLeftTranslateY
+                                        input(type="text", name="message", value="")
+                                        span Напишите ваше сообщение
+                                    input(type='submit', value='отправить')
+
+                    .slide4-map.backgrounded-img
+                        .map#map.SelectAnimationBefore
+
+                    .copyrights.SelectAnimationLeftTranslateY
+                        a(href="#") Задизайнено&nbsp;в
+                            span komnate
+                        a(href="#") Политика&nbsp;сайта
+
+

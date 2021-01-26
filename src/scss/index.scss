@@ -58,7 +58,6 @@ body {
     border-radius: 50%;
     background-color: #009e4ecc;
     pointer-events: none;
-    mix-blend-mode: difference;
     z-index: 999999;
     transition: transform 0.2s;
 }
@@ -74,7 +73,7 @@ header {
     align-items: center;
     z-index: 100;
 
-    padding: 30px 45px 0;
+    padding: 12px 45px 11px;
 
     nav {
         .inst-link {
@@ -104,7 +103,6 @@ header {
     a + a {
         margin-left: 18px;
     }
-
     .mobile-header-elements {
         display: none;
 
@@ -114,6 +112,20 @@ header {
         }
     }
 }
+
+.headerProgect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 12px 45px 11px;
+    background: #fff;
+}
+
 
 a {
     font-family: 'GolosUI';
@@ -436,13 +448,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         padding-right: 50%;
-
         p {
             max-width: 400px;
             margin-bottom: 20px;
-
             color: #000;
         }
     }
@@ -976,7 +985,7 @@ footer {
         &--block {
             &__item {
                 width: 100vw;
-                height: 100vh;
+                height: 85vh;
 
                 position: sticky;
                 position: -webkit-sticky;
@@ -987,7 +996,7 @@ footer {
                 &--img {
                     width: 100vw;
                     background: linear-gradient(359.79deg, rgba(0, 0, 0, 0.56) 29.68%, rgba(0, 0, 0, 0) 70.13%);
-                    height: 100vh;
+                    height: 85vh;
 
                     position: relative;
                     div {
@@ -1078,10 +1087,21 @@ footer {
                         color: #000000;
                         padding-left: 25px;
                     }
-                    img {
+                    div {
                         position: absolute;
                         left: 0;
                         width: 16px;
+                        top: 0;
+                    }
+                    &:hover {
+                        span {
+                            color: #009E4F;
+                        }
+                        svg {
+                            path {
+                                stroke: #009E4F;
+                            }
+                        }
                     }
                 }
 
@@ -2084,7 +2104,7 @@ footer {
     color: #313131;
     position: static;
     margin-left: 0px;
-    transition: 1s;
+    transition: 1s cubic-bezier(0.76, 0, 0.24, 1) ;
     z-index: 1;
     //animation: active_HoverTop 0.4s ;
 }
@@ -2095,7 +2115,7 @@ footer {
     top: 0;
     z-index: -1;
     margin-top: -85px;
-    transition: 1s;
+    transition: 1s cubic-bezier(0.76, 0, 0.24, 1) ;
 
     //animation: active_HoverOutTop 0.3s ;
 }
@@ -2167,5 +2187,65 @@ footer {
         background-size: 130%;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .cursor {
+        display: none;
+    }
+}
+
+
+
+
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: #fff;
+    z-index: 9999;
+}
+
+.spin {
+    width: 150px;
+    height: 150px;
+    top: 41%;
+    left: 50%;
+    margin-left: -75px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #000;
+    position: absolute;
+    animation: spin 1500ms infinite linear;
+}
+
+.spin:before {
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 3px solid transparent;
+    border-top-color: #000;
+    animation: antispin 700ms infinite linear;
+    content: "";
+    position: absolute;
+    border-radius: 60%;
+}
+
+@keyframes spin { 100% {transform:rotate(360deg);} }
+@keyframes antispin {
+    from {transform: rotate}
+    to {transform: rotate(-360deg);}
+}
+
+.preloader svg {
+    width: 112px;
+    top: 47.5%;
+    left: 50%;
+    margin-left: -56px;
+    position: relative;
+}
+
 
 @import 'case.scss';

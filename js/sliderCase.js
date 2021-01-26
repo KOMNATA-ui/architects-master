@@ -28,6 +28,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         dots: false,
+        fade: true,
+        cssEase: 'ease-in-out',
         focusOnSelect: true
     });
 
