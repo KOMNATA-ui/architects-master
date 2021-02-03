@@ -1569,6 +1569,10 @@ footer {
     }
 
     .slide2 {
+        .line1 {
+            padding-right: 56%;
+        }
+
         .line2 {
             h1 {
                 line-height: 105px;
@@ -1653,6 +1657,12 @@ footer {
 
     .slider-controls {
         left: calc(100vw * 0.12);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slider-controls {
+        left: calc(100vw * 0.12 + 20px);
     }
 }
 
