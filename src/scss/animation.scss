@@ -1,26 +1,26 @@
 .animationLeftTranslateX {
     overflow: hidden;
     position: relative;
-    &:before {
-        content: "";
-        width: 1px;
-        position: absolute;
-        left: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s ;
-        animation-fill-mode: forwards;
-    }
-    &:after {
-        content: "";
-        width: 1px;
-        position: absolute;
-        right: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s ;
-        animation-fill-mode: forwards;
-    }
+    //&:before {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    animation: BottomTranslateXLineTop 2s ;
+    //    animation-fill-mode: forwards;
+    //}
+    //&:after {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    right: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    animation: BottomTranslateXLineTop 2s ;
+    //    animation-fill-mode: forwards;
+    //}
     >* {
         animation: LeftTranslateX 2.5s ;
         animation-fill-mode: forwards;
@@ -43,26 +43,26 @@
 .animationBottomTranslateY {
     overflow: hidden;
     position: relative;
-    &:before {
-        content: "";
-        width: 1px;
-        position: absolute;
-        left: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s ;
-        animation-fill-mode: forwards;
-    }
-    &:after {
-        content: "";
-        width: 1px;
-        position: absolute;
-        right: 0px;
-        height: 900px;
-        background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s  ;
-        animation-fill-mode: forwards;
-    }
+    //&:before {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    left: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    animation: BottomTranslateXLineTop 2s ;
+    //    animation-fill-mode: forwards;
+    //}
+    //&:after {
+    //    content: "";
+    //    width: 1px;
+    //    position: absolute;
+    //    right: 0px;
+    //    height: 900px;
+    //    background: rgb(212, 212, 212);
+    //    animation: BottomTranslateXLineTop 2s  ;
+    //    animation-fill-mode: forwards;
+    //}
     >* {
         animation: BottomTranslateX 2.5s ;
         animation-fill-mode: forwards;
@@ -119,7 +119,7 @@
         left: 0px;
         height: 900px;
         background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: BottomTranslateXLineTop 2.3s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
     }
     &:after {
@@ -129,7 +129,7 @@
         right: 0px;
         height: 900px;
         background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: BottomTranslateXLineTop 2.3s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
     }
 }
@@ -161,7 +161,7 @@
         left: 0px;
         height: 900px;
         background: rgb(212, 212, 212);
-        animation: BottomTranslateXLineTop 2s cubic-bezier(0.76, 0, 0.24, 1) ;
+        animation: BottomTranslateXLineTop 2.5s cubic-bezier(0.76, 0, 0.24, 1) ;
         animation-fill-mode: forwards;
     }
     animation: BeforeOpacity 3s cubic-bezier(0.76, 0, 0.24, 1) ;
@@ -204,10 +204,7 @@
         opacity: 0;
     }
     15% {
-        opacity: .5;
-    }
-    55% {
-        opacity: 1;
+        opacity: 0;
     }
     to {
         opacity: 1;

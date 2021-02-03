@@ -73,7 +73,7 @@ header {
     align-items: center;
     z-index: 100;
 
-    padding: 12px 45px 11px;
+    padding: 12px 15px 11px;
 
     nav {
         .inst-link {
@@ -122,7 +122,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    padding: 12px 45px 11px;
+    padding: 12px 15px 11px;
     background: #fff;
 }
 
@@ -197,6 +197,7 @@ footer {
     font-weight: normal;
     text-transform: uppercase;
     color: #313131;
+    opacity: 0;
 }
 
 .minpage-slide-text-medium {
@@ -216,7 +217,7 @@ footer {
 }
 
 .text-change {
-    overflow: hidden;
+    //overflow: hidden;
     display: grid;
     gap: 0px;
     height: 62px;
@@ -576,7 +577,7 @@ footer {
 
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
 
         p {
             margin-bottom: 20px;
@@ -805,14 +806,16 @@ footer {
                 }
             }
 
-            input[type="submit"] {
+            a {
                 background: #009E4F;
                 padding: 13px 28px;
                 font-size: 14px;
                 color: #fff;
-                font-weight: bold;
+                text-decoration: none;
+                font-weight: 500;
                 border: none;
                 width: 135px;
+                text-align: center;
                 transition: opacity .15s ease;
 
                 &:hover {
@@ -869,7 +872,7 @@ footer {
                 padding-top: 120px;
             }
             @media (max-width: 510px) {
-                padding-bottom: 60px;
+                padding-bottom: 30px;
                 padding-top: 120px;
             }
             h1 {
@@ -907,34 +910,37 @@ footer {
         }
         &--block {
             &__grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 80px;
+                div {
+                    display: grid;
+                    grid: repeat(1, 1fr) / repeat(3, 1fr);
+                    gap: 80px;
 
-                @media (max-width: 1760px) {
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 60px;
+                    @media (max-width: 1760px) {
+                        grid: repeat(1, 1fr) / repeat(3, 1fr);
+                        gap: 60px;
+                    }
+                    @media (max-width: 1441px) {
+                        grid: repeat(1, 1fr) / repeat(3, 1fr);
+                        gap: 40px;
+                    }
+                    @media (max-width: 1281px) {
+                        grid: repeat(1, 1fr) / repeat(3, 1fr);
+                        gap: 20px;
+                    }
+                    @media (max-width: 1025px) {
+                        grid: repeat(1, 1fr) / repeat(2, 1fr);
+                        gap: 40px;
+                    }
+                    @media (max-width: 768px) {
+                        grid: repeat(1, 1fr) / repeat(1, 1fr);
+                        gap: 30px;
+                    }
+                    @media (max-width: 510px) {
+                        grid: repeat(1, 1fr) / repeat(1, 1fr);
+                        gap: 25px;
+                    }
                 }
-                @media (max-width: 1441px) {
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 40px;
-                }
-                @media (max-width: 1281px) {
-                    grid-template-columns: 1fr 1fr 1fr;
-                    gap: 20px;
-                }
-                @media (max-width: 1025px) {
-                    grid-template-columns: 1fr 1fr;
-                    gap: 40px;
-                }
-                @media (max-width: 768px) {
-                    grid-template-columns: 1fr;
-                    gap: 30px;
-                }
-                @media (max-width: 510px) {
-                    grid-template-columns: 1fr;
-                    gap: 25px;
-                }
+
                 div {
                     display: grid;
                     gap: 40px;
@@ -1231,6 +1237,7 @@ footer {
         }
         @media (max-width: 510px) {
             width: 100%;
+            padding: 160px 15px;
         }
     }
     >div:nth-child(2) {
@@ -1561,7 +1568,8 @@ footer {
             align-items: center;
             background: #009E4F;
             z-index: 10;
-            padding-top: 60px;
+            padding-bottom: 135px;
+            padding-top: 80px;
 
             transition: all .3s ease;
 
@@ -1696,6 +1704,10 @@ footer {
 
             a {
                 color: #fff;
+                z-index: 9999;
+                    path {
+                        fill: #fff;
+                    }
             }
         }
     }
@@ -1811,7 +1823,7 @@ footer {
     }
 
     .slide2 {
-        margin-top: 40px;
+        margin-top: 30px;
         overflow: hidden;
         padding-bottom: 0;
         .fp-tableCell {
@@ -1860,7 +1872,7 @@ footer {
             }
 
             .text-wrapper {
-                margin-bottom: 5px;
+                margin-bottom: 10px;
                 align-items: flex-start;
             }
         }
@@ -1899,7 +1911,7 @@ footer {
             bottom: 0;
             width: 100%;
             position: static;
-            margin-bottom: 30px;
+            margin-bottom: 55px;
 
             p {
                 display: block;
@@ -1982,7 +1994,7 @@ footer {
         }
 
         &-content {
-            padding: 60px 15px 0;
+            padding: 10px 15px 0;
             width: 100%;
         }
 
@@ -2113,11 +2125,33 @@ footer {
 
 .active_Hover {
     color: #313131;
-    position: static;
+
     margin-left: 0px;
-    transition: 1s cubic-bezier(0.76, 0, 0.24, 1) ;
+    transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1) ;
     z-index: 1;
-    //animation: active_HoverTop 0.4s ;
+    //animation: active_HoverTop  1s cubic-bezier(0.7, 0, 0.3, 1);;
+    animation-fill-mode: forwards;
+
+    color: #313131;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes active_HoverTop {
+    from {
+        color: #fff;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+    }
+    50% {
+        color: #fff;
+        opacity: 0;
+    }
+    to {
+
+    }
 }
 
 .active_HoverOut {
@@ -2125,37 +2159,28 @@ footer {
     //position: absolute;
     top: 0;
     z-index: -1;
-    margin-top: -85px;
-    transition: 1s cubic-bezier(0.76, 0, 0.24, 1) ;
+    transition: 0.3s cubic-bezier(0.76, 0, 0.24, 1) ;
+    //animation: active_HoverOutTop 1s cubic-bezier(0.7, 0, 0.3, 1);;
+    animation-fill-mode: forwards;
+    color: #fff;
+    opacity: 0;
+    position: absolute;
+    top: 0;
 
-    //animation: active_HoverOutTop 0.3s ;
 }
 
 @keyframes active_HoverOutTop {
     from {
-        top: 0;
-        color: #fff;
-    }
-    30% {
-        color: #fff;
-    }
-    to {
-        top: 0px;
-
-    }
-}
-
-@keyframes active_HoverTop {
-    from {
-        color: #fff;
-    }
-    30% {
-        color: #fff;
-    }
-    to {
         color: #313131;
+        opacity: 1;
+        position: absolute;
+        top: 0;
+    }
+    to {
+
     }
 }
+
 
 
 .slideshow .slider-track {
@@ -2257,6 +2282,14 @@ footer {
     margin-left: -56px;
     position: relative;
 }
+
+
+.is-activeHead {
+    overflow: hidden!important;
+}
+
+
+
 
 
 

@@ -193,17 +193,23 @@ $(document).on('click', '#moveUp', function(){
     fullpage_api.responsiveSlides.toSlides();
 });
 
+
 $(document).ready(function() {
     ymaps.ready(init);
 
-    var button = $('.mobile-nav-open '),
-        header = $('header');
+    var button = $('.mobile-nav-open'),
+        header = $('header'),
+        bodi = $('body');
 
     $('.mobile-nav-open').on('click', function() {
         button.toggleClass('is-active');
         header.toggleClass('is-active');
+        bodi.toggleClass('is-activeHead');
     })
 })
+
+
+
 
 function init() {
   var myMap = new ymaps.Map("map", {
@@ -278,29 +284,11 @@ $(document).ready(function(){
 
 
 
-function ChangeOver(x) {
-    document.getElementById('pageImgOne').classList.remove('greenOut');
-    document.getElementById('pageImgOne').classList.add('green');
-
-    document.getElementById('progectHoverTwo').classList.add('active_HoverOut');
-    document.getElementById('progectHoverTwo').classList.remove('active_Hover');
-};
-
-function ChangeOverOut(x) {
-    document.getElementById('pageImgOne').classList.remove('green');
-    document.getElementById('pageImgOne').classList.add('greenOut');
-
-    document.getElementById('progectHoverTwo').classList.add('active_Hover');
-    document.getElementById('progectHoverTwo').classList.remove('active_HoverOut');
-
-    console.log("dssd")
-};
-
-
 function ChangeOver2(x) {
     document.getElementById('pageImgTwo').classList.remove('greenOut');
     document.getElementById('pageImgTwo').classList.add('green');
-
+    document.getElementById('progectHover').classList.add('active_Hover');
+    document.getElementById('progectHover').classList.remove('active_HoverOut');
     document.getElementById('progectHoverTwo').classList.add('active_HoverOut');
     document.getElementById('progectHoverTwo').classList.remove('active_Hover');
 };
@@ -308,7 +296,8 @@ function ChangeOver2(x) {
 function ChangeOverOut2(x) {
     document.getElementById('pageImgTwo').classList.remove('green');
     document.getElementById('pageImgTwo').classList.add('greenOut');
-
+    document.getElementById('progectHover').classList.add('active_HoverOut');
+    document.getElementById('progectHover').classList.remove('active_Hover');
     document.getElementById('progectHoverTwo').classList.add('active_Hover');
     document.getElementById('progectHoverTwo').classList.remove('active_HoverOut');
 
@@ -316,7 +305,28 @@ function ChangeOverOut2(x) {
 };
 
 
+function ChangeOver(x) {
+    document.getElementById('pageImgOne').classList.remove('greenOut');
+    document.getElementById('pageImgOne').classList.add('green');
+    document.getElementById('progectHover').classList.add('active_Hover');
+    document.getElementById('progectHover').classList.remove('active_HoverOut');
+    document.getElementById('progectHoverTwo').classList.add('active_HoverOut');
+    document.getElementById('progectHoverTwo').classList.remove('active_Hover');
+};
+
+function ChangeOverOut(x) {
+    document.getElementById('pageImgOne').classList.remove('green');
+    document.getElementById('pageImgOne').classList.add('greenOut');
+    document.getElementById('progectHover').classList.add('active_HoverOut');
+    document.getElementById('progectHover').classList.remove('active_Hover');
+    document.getElementById('progectHoverTwo').classList.add('active_Hover');
+    document.getElementById('progectHoverTwo').classList.remove('active_HoverOut');
+
+    console.log("dssd")
+};
+
 $(document).ready(function() {
+
     $(".hamburger-menu-button").click(function() {
         $(".main-box").toggleClass("main-box-clicked");
         $(".hamburger-box").toggleClass("hamburger-box-clicked");

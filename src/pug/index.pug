@@ -1,7 +1,7 @@
 extends views/layout.pug
 
 block content
-    .container 
+    .container
         .first-screen#fullpage
             .slide1.mainpage-slide.section
                 .line1.line
@@ -9,15 +9,15 @@ block content
                         h1.minpage-slide-title Смена
                     div.SelectAnimationBefore.imgScrollOverfloyClassCont
                         .backgrounded-img.slide1-img1#pageImgOne(style='background-image:url(../media/1-1.png', onmouseover="ChangeOver(this)", onmouseout="ChangeOverOut(this)")
-                    div.SelectAnimationOpacity.text-change
+                    div.SelectAnimationOpacity.text-change(style="position: relative")
                         h4.minpage-slide-text-big#progectHoverTwo За&nbsp;нас&nbsp;говорят объекты
-                        h4.minpage-slide-text-big новосибирск&nbsp;мега 2020
-                
+                        h4.minpage-slide-text-big.active_HoverOut#progectHover новосибирск&nbsp;мега 2020
+
                 .line2.line
                     div.SelectAnimationLeftTranslateY
                         h1.minpage-slide-title Парадигмы
 
-                .line3.line 
+                .line3.line
                     div.SelectAnimationOpacity
                         .text-wrapper
                             p.minpage-slide-text-small Если вы&nbsp;еще не&nbsp;знаете, какой нужен бюджет для&nbsp;проекта, то&nbsp;просто
@@ -28,12 +28,12 @@ block content
                 .line4.line
                     .text
                         div.SelectAnimationOpacity
-                            h5.minpage-slide-text-big Мы — архитектурное бюро в&nbsp;новосибирске
+                            h5.minpage-slide-text-big Мы — архитектурное бюро в&nbsp;новосибирске,
                         div.SelectAnimationOpacity
-                            h6.minpage-slide-text-medium , деятельность которого направлена на&nbsp;качественное улучшение городской среды. Мы&nbsp;восстанавливаем, формируем и&nbsp;воспитываем культуру проектирования. 
+                            h6.minpage-slide-text-medium деятельность которого направлена на&nbsp;качественное улучшение городской среды. Мы&nbsp;восстанавливаем, формируем и&nbsp;воспитываем культуру проектирования.
 
                 .last-case
-                    a(href="somewhere")
+                    a(href="case.html")
                         div.SelectAnimationLeftTranslateY
                             p Последний кейс бюро
                         div.SelectAnimationBefore.imgSizeOverfloyClassCont
@@ -45,7 +45,7 @@ block content
                                         span 0
                                         span 1
                                         span 9
-            
+
             .slide2.mainpage-slide.section
                 .slide2-img
                     div.SelectAnimationBefore.imgSizeOverfloyClassCont
@@ -86,7 +86,7 @@ block content
                     p.mobile.minpage-slide-text-small Мы&nbsp;готовы ответить на&nbsp;все Ваши вопросы о&nbsp;проектировании, реконструкции зданий и&nbsp;перепланировке помещений!
 
                 .slide3-img
-                    a(href="somewhere")
+                    a(href="case.html")
                         div.SelectAnimationBefore.imgSizeOverfloyClassCont
                             div.SelectAnimationOpacity
                                 p Директор: Дерябина Марина Александровна
@@ -102,7 +102,7 @@ block content
                         p.mobile.minpage-slide-text-small Мы&nbsp;заботимся, чтобы видя плачущего прораба, Вы&nbsp;всегда были уверены, что&nbsp;это не&nbsp;Ваш&nbsp;работник, потому&nbsp;что документация по&nbsp;Вашему проекту выполнена профессионалами.
 
                     .inst-line
-                        a(href="https://www.instagram.com/format_architects/?igshid=5y9xtcg1zpra", target="_blank").elements-wrapper 
+                        a(href="https://www.instagram.com/format_architects/?igshid=5y9xtcg1zpra", target="_blank").elements-wrapper
                             div.SelectAnimationBefore
                                 .inst-element.backgrounded-img(style='background-image:url(../media/inst1.png')
                             div.SelectAnimationBefore
@@ -128,12 +128,12 @@ block content
                                 .slide4-contacts-text-title адрес:
                                 .slide4-contacts-text-contact г.&nbsp;Новосибирск, ул.&nbsp;Максима&nbsp;Горького&nbsp;54, 3&nbsp;этаж, офис&nbsp;207
                                 .slide4-contacts-text-title ТЕЛЕФОН:
-                                .slide4-contacts-text-contact 
+                                .slide4-contacts-text-contact
                                     a(href="tel: +79992424455") +7&nbsp;(999)&nbsp;242&nbsp;44&nbsp;55
-                                .slide4-contacts-text-contact 
+                                .slide4-contacts-text-contact
                                     a(href="tel: +79233334598") +7&nbsp;(923)&nbsp;333&nbsp;45&nbsp;98
                                 .slide4-contacts-text-title почта:
-                                .slide4-contacts-text-contact 
+                                .slide4-contacts-text-contact
                                     a(href="mailto: FORMATARCHITECTS@GMAIL.COM") FORMATARCHITECTS@GMAIL.COM
                             .slide4-contacts-form
                                 form(action="").SelectAnimationLeftTranslateY
@@ -149,13 +149,13 @@ block content
                                     label.SelectAnimationLeftTranslateY
                                         input(type="text", name="message", value="")
                                         span Напишите ваше сообщение
-                                    input(type='submit', value='отправить')
+                                    a(type='submit' href="#") отправить
 
                     .slide4-map.backgrounded-img
                         .map#map.SelectAnimationBefore
 
                     .copyrights.SelectAnimationLeftTranslateY
-                        a(href="https://komnata.agency/ru") Задизайнено&nbsp;в&nbsp;&nbsp;
+                        a(href="https://komnata.agency/ru") Задизайнено&nbsp;в&nbsp
                             span komnate
                         a(href="#") Политика&nbsp;сайта
 
